@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bathrooms</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/b06697df64.js" async defer></script>
+  <style>
+  	@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900');
+	body{
+		font-family: 'Source Sans Pro', sans-serif;
+		letter-spacing: 1px;
+		font-size: 16px;
+	}
+  	header {
+		padding: 30px 0;
+	}
+	.ph {
+		text-align: right;
+		font-size: 16px;
+		letter-spacing: 1px;
+		line-height: normal;
+	}
+	.ph-number {
+		text-align: right;
+		color: #f79122;
+		font-size: 35px;
+		line-height: normal;
+	}
+	#banner{
+		background: url(https://freddyit.com/resources/img/header-bathroom-bg.jpg);
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+	#banner form {
+		width: 100%;
+		max-width: 400px;
+		margin: auto;
+		background: #f79122;
+		padding: 30px 40px;
+	}
+	#banner form p {
+		font-size: 18px;
+		margin: 0;
+		letter-spacing: 1px;
+	}
+	#banner form h2 {
+		margin: 0;
+		margin-bottom: 20px;
+		color: white;
+		letter-spacing: 1px;
+	}
+	#banner form label {
+		width: 100%;
+		color: white;
+		font-size: 15px;
+		letter-spacing: 1px;
+		font-weight: normal;
+	}
+	#banner form input[type="text"] {
+		width: 100%;
+		padding: 7px 10px;
+		border: none;
+		margin-bottom: 10px;
+	}
+	#banner form label.check {
+		width: 100%;
+		color: white;
+		font-size: 12px;
+		letter-spacing: 1px;
+		font-weight: normal;
+		padding-left: 15px;
+		text-indent: -15px;
+	}
+	#banner form input[type="submit"] {
+		background: #d9c13f;
+		width: 100%;
+		border: 0;
+		margin: 15px 0;
+		padding: 15px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	.text-banner {
+		width: 100%;
+		max-width: 350px;
+		margin: 40px 0;
+	}
+	.text-banner h1 {
+		font-size: 5em;
+	}
+	.text-banner p {
+		font-size: 25px;
+		margin-bottom: 20px;
+	}
+	#welcome h1 {
+		color: #f79122;
+	}
+	#welcome {
+		padding: 80px 0;
+	}
+	#feature h1 {
+		text-transform: uppercase;
+	}
+	#feature {
+		padding: 80px 0;
+		background: #f6f6f6;
+	}
+	#feature img{
+		margin: 10px auto;	
+	}
+	#cta p {
+		color: white;
+		font-size: 18px;
+		margin-bottom: 40px;
+	}
+	#cta {
+		padding: 80px 0;
+		background: #f79122;
+		text-align: center;
+	}
+	#cta h1 {
+		color: white;
+		font-size: 3em;
+	}
+	#cta button {
+		color: #f79122;
+		background: white;
+		border: 0;
+		padding: 15px 30px;
+		font-size: 25px;
+		font-weight: 400;
+		border-radius: 5px;
+	}
+	#testimonials h1 {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	#testimonials {
+		padding: 80px 0;
+	}
+	.testi-box {
+		margin: 15px auto;
+		border: 1px solid #ccc;
+		padding: 20px 25px;
+		border-radius: 5px;
+	}
+	footer {
+		background: #000;
+		font-size: 12px;
+		padding: 15px 0;
+		text-transform: uppercase;
+	}
+	.logo img {
+		filter: brightness(0) invert(1);
+		max-height: 45px;
+		float: right;
+	}
+	.logo {
+		float: right;
+	}
+	.fa.fa-facebook {
+		background: #337ab7;
+		padding: 10px;
+		margin: 10px;
+		color: white;
+	}
+	footer p {
+		margin: 10px 0;
+	}
+	header img {
+		max-height: 100px;
+	}
+	@media(max-width:991px){
+		header img {
+			text-align: center;
+			margin: auto;
+		}
+		.ph, .ph-number{
+			text-align: center;	
+		}
+		.text-banner {
+			text-align: center;
+			margin: auto;
+		}
+		#welcome img {
+			margin: auto;
+		}
+	}
+	@media(max-width:500px){
+		.text-banner h1 {
+			font-size: 4em;
+		}	
+	}
+	.service-box {
+		height: 250px;
+		background-size: cover !important;
+		position: relative;
+		width: 100%;
+		max-width: 500px;
+		margin: 20px auto;
+	}
+	.service-box-text {
+		background: #f79122;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		padding: 20px 0;
+		color: white;
+	}
+	.service-box-text h3 {
+		margin: 0;
+		color: white;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	.service-box-text .strech {
+		letter-spacing: 5px;
+	}
+</style>
+</head>
+<body>
+<header>
+    <div class="container">
+    	<div class="col-md-3">
+     		<img src="https://bathroomsbyfreddy.co.uk/resources/img/bathrooms-by-freedy-logo.png" alt="bathrooms" class="img-responsive">
+        </div>
+        <div class="col-md-9">
+     		<div class="ph">CALL US NOW!</div>
+            <div class="ph-number">02380 - 989130</div>
+        </div>
+    </div>
+</header>
+<section id="banner">
+	<div class="container">
+    	<div class="col-md-6">
+        	<div class="text-banner">
+                <h1>Find Your<br><strong>TRADESMAN</strong></h1>
+                <p>Subscribe and get notified about new personnel</p>
+                <p>or</p>
+                <p>Fill out the form to get a quote for FREE!</p>
+            </div>
+        </div>
+    	<div class="col-md-6">
+        	<form>
+            	<p>SIGN UP FOR</p>
+                <h2>FREE QUOTE</h2>
+                <label>Name</label>
+                <input type="text">
+                <label>Email</label>
+                <input type="text">
+                <label>Phone Number</label>
+                <input type="text">
+                <label class="check"><input type="checkbox"> By clicking above, I authorize By Freddy to call me and send pre-recorded messages and text messages to me about By Freddy products and services at the telephone number I entered above, using an autodialer, even if I am on a national or state "Do Not Call" list. Message and data rates may apply. I understand that consent here is not a condition of purchase.</label>
+                
+                <input type="submit" value="Get Quote">
+            </form>
+        </div>
+    </div>
+</section>
+<section id="welcome">
+	<div class="container">
+    	<div class="col-md-7">
+        	<h1>WELCOME!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+
+           <p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, maleat, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec erostibulum in faucibus orci luctus et ultrices posuere cubilia cudisse sollicit udin velit sed leo. Ut pharetra augue nec augue. Nam elit magna, hendrerit sit amet, tincidunt ac.Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, maleat, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec erostibulum in faucibus orci luctus et ultrices posuere</p>
+        </div>
+    	<div class="col-md-5">
+        	<img src="https://freddyit.com/resources/img/bathrooms-img.jpg" class="img-responsive">
+        </div>
+    </div>
+</section>
+<section id="feature">
+	<div class="container">
+        	<h1>Feature</h1>
+            <p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, maleat, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec erostibulum in faucibus orci luctus et ultrices posuere cubilia cudisse sollicit udin velit sed leo.</p>
+
+           <div class="row">
+           		<div class="col-md-4">
+                	<div class="service-box" style="background:url('https://dev.bathroomsbyfreddy.co.uk/resources/img/new-ensuites-bathrooms.jpg');">
+                    	<div class="service-box-text">
+                        	<h3>new &amp; ensuites</h3> <span class="strech">Bathroom</span>
+                        </div>
+                    </div>
+                </div>
+           		<div class="col-md-4">
+                	<div class="service-box" style="background:url('https://dev.bathroomsbyfreddy.co.uk/resources/img/renovation-bathrooms.jpg');">
+                    	<div class="service-box-text">
+                        	<h3>renovation</h3> <span class="strech">Bathroom</span>
+                        </div>
+                    </div>
+                </div>
+           		<div class="col-md-4">
+                	<div class="service-box" style="background:url('https://dev.bathroomsbyfreddy.co.uk/resources/img/repairs-bathrooms.jpg');">
+                    	<div class="service-box-text">
+                        	<h3>repairs</h3> <span class="strech">Bathroom</span>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+</section>
+<section id="cta">
+	<div class="container">
+    	<h1>WHAT ARE YOU WAITING FOR?</h1>
+        <p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, maleat, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec erostibulum in faucibus orci.</p>
+        <button>GET STARTED NOW</button>
+    </div>
+</section>
+<section id="testimonials">
+	<div class="container">
+    	<h1>Testimonials</h1>
+        <p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, maleat, neque.</p>
+        
+        <div class="row">
+        	<div class="col-md-6">
+            	<div class="testi-box">
+                	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    <b>John Smith, UK</b>
+                </div>
+            </div>
+        	<div class="col-md-6">
+            	<div class="testi-box">
+                	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    <b>Renee Daze, AU</b>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+	<div class="container">
+    	<div class="col-md-6">
+        	<p>© 2019 freddyit.com    Terms and conditions   Privacy notice   Cookie policy<br>
+Registered in England No. 05272398. UK VAT Registered: 850 4121 63</p>
+        </div>
+        <div class="col-md-6">
+        	<div class="logo"><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></div><div class="logo"><img src="https://freddyit.com/resources/img/new-logo.png" class="img-responsive"></div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
