@@ -13,7 +13,7 @@ session_start();
 // $config['user'] 		= 'root';
 // $config['pass'] 		= '';
 // $config['dbname']	 	= 'professionalfencing_db';
-$config['host'] 		= '10.131.137.35';
+$config['host'] 		= '77.68.123.108';//'10.131.137.35';
 $config['user'] 		= 'byfreddyprod';
 $config['pass'] 		= 'eBTo_012Abus0159510';
 $config['dbname']		= 'BY_FREDDY';
@@ -39,23 +39,31 @@ $config['db'] 			= mysql_select_db($config['dbname'],$config['link']);
 
 
 //HTTP REGUEST URLS FOR CSS, IMAGES AND JS newsite\resources
-$config['siteurl'] 				= "https://".$_SERVER['SERVER_NAME']."/";
-$siteurl 						= $config['siteurl'];
-$config['sourceRoot']           = $_SERVER['DOCUMENT_ROOT'].'/';
-$config['siteurl_admin'] 	    = $config['siteurl']."administrator/";
-$config['root_img'] 			= $config['siteurl']."resources/img/";
-$config['root_product_img'] 	= $config['siteurl']."resources/category_images/";
-$config['root_product_img'] 	= $config['siteurl']."resources/product_images/";
-$config['root_blog_img'] 		= $config['siteurl']."resources/blog_images/";
-$config['root_css'] 			= $config['siteurl']."resources/css/";
-$config['root_js'] 				= $config['siteurl']."resources/js/";
-$config['core_action'] 			= $config['siteurl']."action/";
+//$config['siteurl'] 				= "https://".$_SERVER['SERVER_NAME']."/";
+$config['siteurl'] 				= "http://localhost/bathroomsbyfreddy/";
+//$siteurl 						= $config['siteurl'];
+$config['sourceRoot']           = $_SERVER['DOCUMENT_ROOT'].'/bathroomsbyfreddy/';
+
+
+
+
+$config['siteurl_admin'] 	    = $config['sourceRoot']."administrator/";
+$config['root_img'] 			= $config['sourceRoot']."resources/img/";
+$config['root_product_img'] 	= $config['sourceRoot']."resources/category_images/";
+$config['root_product_img'] 	= $config['sourceRoot']."resources/product_images/";
+$config['root_blog_img'] 		= $config['sourceRoot']."resources/blog_images/";
+$config['root_css'] 			= $config['sourceRoot']."resources/css/";
+$config['root_js'] 				= $config['sourceRoot']."resources/js/";
+$config['core_action'] 			= $config['sourceRoot']."action/";
 
 
 ///////////////////Smarty Variables 
 $config['web_pages'] = $config['sourceRoot'] . "module/";
 $config['web_helpers'] = $config['sourceRoot'] . "helpers/";
 $config['smarty_lib'] = $config['sourceRoot'] . "libs/";
+
+
+
 $config['smarty_templates'] = $config['sourceRoot'] . "templates/";
 $config['smarty_config'] = $config['sourceRoot'] . "config/";
 

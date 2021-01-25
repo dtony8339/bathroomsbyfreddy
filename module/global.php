@@ -15,7 +15,9 @@ $smarty->assign("team_menu_check", $team_menu_check);
 $our_reviws_menu_check=get_reviws_count();
 $smarty->assign("our_reviws_menu_check", $our_reviws_menu_check);
 
+
 $results = json_decode(file_get_contents('https://admin.byfreddy.io/index.php/admin_modules/area_selection/get?id=1'));
+
 
 $area_selection = array();
 foreach($results as $result){

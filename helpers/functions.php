@@ -469,7 +469,7 @@ function get_PlumbersProject($ref_id=0){
 	
 	return $result;*/
 	
-	$result = mysqli_query($conn,$sql) or die(mysql_error());
+	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	
 	while($data=mysqli_fetch_assoc($result)){
 		$date = new DateTime($data['date']);

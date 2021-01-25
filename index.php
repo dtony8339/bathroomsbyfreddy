@@ -1,10 +1,16 @@
 <?php
+
+
  require "config.inc.php";
  require "helpers/functions.php";
 
 
-require('' . $config['smarty_lib'] . 'Smarty.class.php');
+
+require(''   . $config['smarty_lib'] . 'Smarty.class.php');
 // Smarty Template Engine
+
+
+
 $smarty = new Smarty;
 
 $smarty->force_compile = true;
@@ -12,17 +18,23 @@ $smarty->debugging = false;
 $smarty->caching = false;
 $smarty->cache_lifetime = 120;
 
+
+
 // END
 require('' . $config['web_pages'] . 'global.php');
 
+
+
+
 if (!isset($_GET['route'])) {
+    
 
     include("" . $config['web_pages'] . "home.php");
 
     exit;
 
 }elseif (!is_numeric($_GET['mid']) && isset($_GET['mid'])) {
-
+ 
 
     //echo $_GET['mid'];
    // exit;
@@ -40,11 +52,12 @@ if (!isset($_GET['route'])) {
 
 
 }elseif (!is_numeric($_GET['tlink']) && isset($_GET['tlink']) && $_GET['route']!='theteam') {
-//echo "AAAA";
-//exit();
-$link=(isset($_GET['route'])?$_GET['route']:null);
-$sublink=(isset($_GET['tlink'])?$_GET['tlink']:null);
-    include("" . $config['web_pages'] . "landing.php");
+    
+
+
+    $link=(isset($_GET['route'])?$_GET['route']:null);
+    $sublink=(isset($_GET['tlink'])?$_GET['tlink']:null);
+        include("" . $config['web_pages'] . "landing.php");
 
 
 
@@ -54,8 +67,10 @@ $sublink=(isset($_GET['tlink'])?$_GET['tlink']:null);
 
 }  else {
 
-    $page = $_GET['route'];
+    
 
+    $page = $_GET['route'];
+  
 
     switch ($page) {
 
