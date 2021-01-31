@@ -1,6 +1,22 @@
 <div class="footer-widget">
 	<div class="container">
-    	<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+		<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
+	<a href="/byfreddy/">
+		<img src="{$smarty.const.root_img}new-bathrooms-by-freedy-logo.png" alt="bathrooms" class="img-responsive">
+	</a>
+	<p class="desc">
+	We love doing bathrooms! Our bathroom team has the benefit of experienced licensed builders who can build or renovate your bathroom from the ground up in any style.
+	</p>
+	<div class="socmedia">
+		<img src="{$smarty.const.root_img}icon-utube.png" alt="" class="">
+		<img src="{$smarty.const.root_img}icon-tw.png" alt="" class="">
+		<img src="{$smarty.const.root_img}icon-insta.png" alt="" class="">
+		<img src="{$smarty.const.root_img}icon-fb.png" alt="" class="">
+	</div>
+		
+		
+		</div>
+    	<div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12">
         	<h3>Homeowners</h3>
             <ul>
             	<li><a href="#">Post a job</li>
@@ -10,7 +26,7 @@
                 <li><a href="#">Competitions</li>
             </ul>
         </div>
-    	<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+    	<div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12">
         	<h3>Advice Centre</h3>
             <ul>
             	<li><a href="#">Advice guides</a></li>
@@ -20,7 +36,7 @@
             	<li><a href="#">Ask a tradesman</a></li>
             </ul>
         </div>
-    	<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+    	<div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12">
         	<h3>Tradesmen</h3>
             <ul>
             	<li><a href="#">Trade sign up</a></li>
@@ -30,7 +46,7 @@
             	<li><a href="#">Tradesman support</a></li>
             </ul>
         </div>
-    	<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+    	<div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12">
         	<h3>Company</h3>
             <ul>
             	<li><a href="#">Our mission</a></li>
@@ -45,15 +61,18 @@
 <footer class="stackfooter">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
-      	&copy; 2019 freddyit.com    Terms and conditions   Privacy notice   Cookie policy<br>
+      <div class="col-sm-12">
+		<p class="footer-copyright">      	&copy; 2019 freddyit.com    Terms and conditions   Privacy notice   Cookie policy<br>
 REGISTERED IN ENGLAND NO. 11723808
+</p>
       </div>
-      <div class="col-sm-6 icons">
+	  
+      <div class="col-sm-6 icons" style="display:none;">
       	<a href="#" target="_blank"><img src="https://freddyit.com/resources/img/logo.png"></a> <a href="https://www.facebook.com/paintingbyfreddyuk/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
       </div>
     </div>
 </footer>
+
 
 <!--Jquery-->
 

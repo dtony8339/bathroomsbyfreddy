@@ -407,6 +407,89 @@ function WidthChange(mq) {
 
 
 
+{literal}
+<script>
+$(document).ready(function(){
+var modal = document.getElementById('network_frednet');
+var frednet = document.getElementById('frednet');
+
+
+
+frednet.onclick =function(){
+	$(".network_frednet").show();
+}
+
+
+window.onclick = function(event){
+	
+	if(event.target == modal){
+		$("#network_frednet").hide();
+		modal.style.display = "none";
+	}
+
+}
+
+
+$(".maintenance-list").hide();
+$(".renovation-list").hide();
+$(".planning-list").hide();
+$(".repair-list").show();
+
+var repair = document.getElementById('repair');
+var renovation = document.getElementById('renovation');
+var planning = document.getElementById('planning');
+var maintenance = document.getElementById('maintenance');
+
+repair.onclick =function(){
+	$(".maintenance-list").hide();
+	$(".renovation-list").hide();
+	$(".planning-list").hide();
+	$(".repair-list").show();
+	renovation.classList.remove("active");
+	planning.classList.remove("active");
+	maintenance.classList.remove("active");
+	repair.classList.add("active");
+}
+renovation.onclick =function(){
+	$(".maintenance-list").hide();
+	$(".renovation-list").show();
+	$(".planning-list").hide();
+	$(".repair-list").hide();
+	renovation.classList.add("active");
+	planning.classList.remove("active");
+	maintenance.classList.remove("active");
+	repair.classList.remove("active");
+}
+planning.onclick =function(){
+	$(".maintenance-list").hide();
+	$(".renovation-list").hide();
+	$(".planning-list").show();
+	$(".repair-list").hide();
+	renovation.classList.remove("active");
+	planning.classList.add("active");
+	maintenance.classList.remove("active");
+	repair.classList.remove("active");
+}
+maintenance.onclick =function(){
+	$(".maintenance-list").show();
+	$(".renovation-list").hide();
+	$(".planning-list").hide();
+	$(".repair-list").hide();
+	renovation.classList.remove("active");
+	planning.classList.remove("active");
+	maintenance.classList.add("active");
+	repair.classList.remove("active");
+}
+
+
+
+});
+
+</script>
+{/literal}
+
+
+
 </body>
 
 </html>
