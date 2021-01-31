@@ -9192,4 +9192,8 @@ text-align:left;
 	.navbar-nav li {
 		padding: 0 12px;
 	}
+	.navbar-nav li ul.dropdown-menu li:first-child {
+		display: block;
+		padding-left: 12px;
+	}
 }
