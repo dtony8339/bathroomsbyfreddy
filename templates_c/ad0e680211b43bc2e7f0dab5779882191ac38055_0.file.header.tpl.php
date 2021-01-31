@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2021-01-31 14:12:47
+/* Smarty version 3.1.31, created on 2021-01-31 14:19:14
   from "C:\xampp\htdocs\bathroomsbyfreddy\templates\common\header.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_6016accfc83660_50762108',
+  'unifunc' => 'content_6016ae526e1bd6_60447220',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ad0e680211b43bc2e7f0dab5779882191ac38055' => 
     array (
       0 => 'C:\\xampp\\htdocs\\bathroomsbyfreddy\\templates\\common\\header.tpl',
-      1 => 1612087971,
+      1 => 1612099004,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6016accfc83660_50762108 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6016ae526e1bd6_60447220 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <style>
@@ -31,22 +31,63 @@ function content_6016accfc83660_50762108 (Smarty_Internal_Template $_smarty_tpl)
 
 <div class="main-header">
     <div class="top-nav">
-        <div>
-            <div class="col-md-3">
-                <div  class="top-nav-bg-logo">
-                    Bathrooms
-                </div>
-                <a href="<?php echo @constant('siteurl');?>
+	<div class="row">
+			
+			<div class="top-head">
+				<div class="col-md-3">
+				<div class="imghome">
+				<a href="<?php echo @constant('siteurl');?>
 "><img src="<?php echo @constant('root_img');?>
 new-bathrooms-by-freedy-logo.png" alt="bathrooms" class="img-responsive"></a>
-            </div>
-            <div class="col-md-9">
-                <div class="top-nav-bg">
-                    <div class="button">
-                        CALL US NOW! 07451 - 279908 <span class="seperator">|</span> <a href="<?php echo @constant('siteurl');?>
-get-quote/"> BOOK AN APPOINTMENT</a> <span class="seperator">|</span> 
-                        <span class="networks">
-                            <a href="#" data-toggle="dropdown">FREDDY NETWORK</a>
+				</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="call_us">
+						<div class="row">
+							<div class="col-xl-3">
+								<img src="<?php echo @constant('root_img');?>
+call_us.png" alt="call_us" class="img-responsive phone">
+							</div>
+							<div class="col-xl-2">
+								<span class="seperator_img"><img src="<?php echo @constant('root_img');?>
+separator.png" alt=""></span>
+							</div>
+							<div class="col-xl-7">
+								<div class="txt-top">
+									<span class="nmbr">07451 - 279908 </span><br><span class="url_home"><a href="<?php echo @constant('siteurl');?>
+">www.bathroomsbyfreddy.co.uk</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				</div>	
+				<div class="col-md-3">
+					<div class="book_us">
+						<img src="<?php echo @constant('root_img');?>
+book_am_appointment.png" alt="book_us" class="img-responsive book">
+						<span class="seperator_img"><img src="<?php echo @constant('root_img');?>
+separator.png" alt=""></span>
+						<div class="txt-top">
+							<span class="appointment"><a href="<?php echo @constant('siteurl');?>
+get-quote/"> Book an Appointment</a> </span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+
+					<div class="fred_networks">
+						<img src="<?php echo @constant('root_img');?>
+network.png" alt="network" class="img-responsive network">
+						<span class="seperator_img"><img src="<?php echo @constant('root_img');?>
+separator.png" alt=""></span>
+						<div class="txt-top">
+						 <span class="networks">
+						 <a href="#" class="frednet" onclick="myNetwork()">Freddy Network</a>
+                            <!--
+							<a href="#" data-toggle="dropdown" class="frednet" >Freddy Network</a>
+							
                             <ul class="dropdown-menu">
                                 <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['sites_menuurl']->value, 'rowurl');
@@ -66,10 +107,42 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 ?>
 
                             </ul>
+							-->
                         </span>
-                    </div>
-                </div>
-                <nav class="navbar navbar-default">
+						</div>
+					</div>
+
+				</div>
+			</div><!-- top-head" -->
+		</div>
+		</div>
+		
+
+<div class="network_frednet" id="network_frednet">
+<div class="netlist">
+	<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['sites_menuurl']->value, 'rowurl');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['rowurl']->value) {
+?>
+	<div>
+	<a href="<?php echo $_smarty_tpl->tpl_vars['rowurl']->value['name'];?>
+" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/<?php echo $_smarty_tpl->tpl_vars['rowurl']->value['service_logo'];?>
+"><p><?php echo $_smarty_tpl->tpl_vars['rowurl']->value['short_name'];?>
+</p></a>
+	</div>
+	<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
+?>
+
+</div>
+</div>
+			
+<div class="navi">
+<div class="mid-head">
+ <nav class="navbar navbar-default">
                     <?php if ($_SESSION['temp_email'] != '') {?>
                         <div class="modal fade" id="pass_check">
                             <div class="modal-dialog">
@@ -118,7 +191,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
                         </button>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav">
                             <li><a href="<?php echo @constant('siteurl');?>
 " style='font-size:14px;'>home</a></li>
                             <li class="dropdown">
@@ -173,8 +246,7 @@ profile/?email=<?php echo $_SESSION['email_test'];?>
                                     <li><a href="#" onclick="signoutuser()" style='font-size:14px;'>Sign Out</a></li>
                                 <?php }?>
                             <?php }?>
-                            <li><a href="<?php echo @constant('siteurl');?>
-get-quote/" class="quote" style='font-size:14px;'>GET QUOTE</a></li>
+                           
                         </ul>
                     </div><!--/.nav-collapse -->
                     <div class="nav-mob-buttons">
@@ -200,9 +272,11 @@ get-quote/" class="quote">GET QUOTE</a>
                         </div>
                     </div>
                 </nav>
-            </div>
-        </div>
-    </div>
+</div><!--top-head -->		
+</div><!--navi -->		
+		
+		
+	
     <div class="top-nav-mob">
         <div class="top-nav-bg">
             <div class="col-md-12">

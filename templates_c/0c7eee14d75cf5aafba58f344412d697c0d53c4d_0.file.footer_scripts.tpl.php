@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2021-01-31 14:12:49
+/* Smarty version 3.1.31, created on 2021-01-31 14:19:14
   from "C:\xampp\htdocs\bathroomsbyfreddy\templates\common\footer_scripts.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_6016acd12a9307_42069521',
+  'unifunc' => 'content_6016ae52f0ca39_21933592',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0c7eee14d75cf5aafba58f344412d697c0d53c4d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\bathroomsbyfreddy\\templates\\common\\footer_scripts.tpl',
-      1 => 1612087971,
+      1 => 1612099004,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6016acd12a9307_42069521 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6016ae52f0ca39_21933592 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <?php echo '<script'; ?>
@@ -444,6 +444,91 @@ function WidthChange(mq) {
 }
 
 
+
+<?php echo '</script'; ?>
+>
+
+
+
+
+
+<?php echo '<script'; ?>
+>
+$(document).ready(function(){
+var modal = document.getElementById('network_frednet');
+var frednet = document.getElementById('frednet');
+
+
+
+frednet.onclick =function(){
+	$(".network_frednet").show();
+}
+
+
+window.onclick = function(event){
+	
+	if(event.target == modal){
+		$("#network_frednet").hide();
+		modal.style.display = "none";
+	}
+
+}
+
+
+$(".maintenance-list").hide();
+$(".renovation-list").hide();
+$(".planning-list").hide();
+$(".repair-list").show();
+
+var repair = document.getElementById('repair');
+var renovation = document.getElementById('renovation');
+var planning = document.getElementById('planning');
+var maintenance = document.getElementById('maintenance');
+
+repair.onclick =function(){
+	$(".maintenance-list").hide();
+	$(".renovation-list").hide();
+	$(".planning-list").hide();
+	$(".repair-list").show();
+	renovation.classList.remove("active");
+	planning.classList.remove("active");
+	maintenance.classList.remove("active");
+	repair.classList.add("active");
+}
+renovation.onclick =function(){
+	$(".maintenance-list").hide();
+	$(".renovation-list").show();
+	$(".planning-list").hide();
+	$(".repair-list").hide();
+	renovation.classList.add("active");
+	planning.classList.remove("active");
+	maintenance.classList.remove("active");
+	repair.classList.remove("active");
+}
+planning.onclick =function(){
+	$(".maintenance-list").hide();
+	$(".renovation-list").hide();
+	$(".planning-list").show();
+	$(".repair-list").hide();
+	renovation.classList.remove("active");
+	planning.classList.add("active");
+	maintenance.classList.remove("active");
+	repair.classList.remove("active");
+}
+maintenance.onclick =function(){
+	$(".maintenance-list").show();
+	$(".renovation-list").hide();
+	$(".planning-list").hide();
+	$(".repair-list").hide();
+	renovation.classList.remove("active");
+	planning.classList.remove("active");
+	maintenance.classList.add("active");
+	repair.classList.remove("active");
+}
+
+
+
+});
 
 <?php echo '</script'; ?>
 >

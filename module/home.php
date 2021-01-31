@@ -38,8 +38,14 @@ $totalfencer=get_fencer_count();
 $smarty->assign("totalfencer", $totalfencer);
 
 // Call Page Templates
-$smarty->display('' . $config['smarty_templates'] . 'common/header_scripts.tpl');
-$smarty->display('' . $config['smarty_templates'] . 'common/header.tpl');
-$smarty->display('' . $config['smarty_templates'] . 'home.tpl');
-$smarty->display('' . $config['smarty_templates'] . 'common/footer.tpl');
-$smarty->display('' . $config['smarty_templates'] . 'common/footer_scripts.tpl');
+// $smarty->display('' . $config['smarty_templates'] . 'common/header_scripts.tpl');
+// $smarty->display('' . $config['smarty_templates'] . 'common/header.tpl');
+// $smarty->display('' . $config['smarty_templates'] . 'home.tpl');
+// $smarty->display('' . $config['smarty_templates'] . 'common/footer.tpl');
+// $smarty->display('' . $config['smarty_templates'] . 'common/footer_scripts.tpl');
+
+$smarty->display( '../templates/common/header_scripts.tpl');
+$smarty->display('../templates/common/header.tpl');
+$smarty->display( '../templates/home.tpl');
+$smarty->display( '../templates/common/footer.tpl');
+$smarty->display( '../templates/common/footer_scripts.tpl');
