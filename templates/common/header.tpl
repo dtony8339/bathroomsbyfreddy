@@ -7,19 +7,53 @@
 
 <div class="main-header">
     <div class="top-nav">
-        <div>
-            <div class="col-md-3">
-                <div  class="top-nav-bg-logo">
-                    Bathrooms
-                </div>
-                <a href="{$smarty.const.siteurl}"><img src="{$smarty.const.root_img}new-bathrooms-by-freedy-logo.png" alt="bathrooms" class="img-responsive"></a>
-            </div>
-            <div class="col-md-9">
-                <div class="top-nav-bg">
-                    <div class="button">
-                        CALL US NOW! 07451 - 279908 <span class="seperator">|</span> <a href="{$smarty.const.siteurl}get-quote/"> BOOK AN APPOINTMENT</a> <span class="seperator">|</span> 
-                        <span class="networks">
-                            <a href="#" data-toggle="dropdown">FREDDY NETWORK</a>
+	<div class="row">
+			
+			<div class="top-head">
+				<div class="col-md-3">
+				<div class="imghome">
+				<a href="{$smarty.const.siteurl}"><img src="{$smarty.const.root_img}new-bathrooms-by-freedy-logo.png" alt="bathrooms" class="img-responsive"></a>
+				</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="call_us">
+						<div class="row">
+							<div class="col-xl-3">
+								<img src="{$smarty.const.root_img}call_us.png" alt="call_us" class="img-responsive phone">
+							</div>
+							<div class="col-xl-2">
+								<span class="seperator_img"><img src="{$smarty.const.root_img}separator.png" alt=""></span>
+							</div>
+							<div class="col-xl-7">
+								<div class="txt-top">
+									<span class="nmbr">07451 - 279908 </span><br><span class="url_home"><a href="{$smarty.const.siteurl}">www.bathroomsbyfreddy.co.uk</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				</div>	
+				<div class="col-md-3">
+					<div class="book_us">
+						<img src="{$smarty.const.root_img}book_am_appointment.png" alt="book_us" class="img-responsive book">
+						<span class="seperator_img"><img src="{$smarty.const.root_img}separator.png" alt=""></span>
+						<div class="txt-top">
+							<span class="appointment"><a href="{$smarty.const.siteurl}get-quote/"> Book an Appointment</a> </span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+
+					<div class="fred_networks">
+						<img src="{$smarty.const.root_img}network.png" alt="network" class="img-responsive network">
+						<span class="seperator_img"><img src="{$smarty.const.root_img}separator.png" alt=""></span>
+						<div class="txt-top">
+						 <span class="networks">
+						 <a href="#" class="frednet" onclick="myNetwork()">Freddy Network</a>
+                            <!--
+							<a href="#" data-toggle="dropdown" class="frednet" >Freddy Network</a>
+							
                             <ul class="dropdown-menu">
                                 {foreach from=$sites_menuurl item=rowurl}
                                 <li>
@@ -27,10 +61,30 @@
                                 </li>
                                 {/foreach}
                             </ul>
+							-->
                         </span>
-                    </div>
-                </div>
-                <nav class="navbar navbar-default">
+						</div>
+					</div>
+
+				</div>
+			</div><!-- top-head" -->
+		</div>
+		</div>
+		
+
+<div class="network_frednet" id="network_frednet">
+<div class="netlist">
+	{foreach from=$sites_menuurl item=rowurl}
+	<div>
+	<a href="{$rowurl['name']}" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/{$rowurl['service_logo']}"><p>{$rowurl['short_name']}</p></a>
+	</div>
+	{/foreach}
+</div>
+</div>
+			
+<div class="navi">
+<div class="mid-head">
+ <nav class="navbar navbar-default">
                     {if $smarty.session.temp_email neq ''}
                         <div class="modal fade" id="pass_check">
                             <div class="modal-dialog">
@@ -78,7 +132,7 @@
                         </button>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav">
                             <li><a href="{$smarty.const.siteurl}" style='font-size:14px;'>home</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" style='font-size:14px;'> Products
@@ -128,7 +182,7 @@
                                     <li><a href="#" onclick="signoutuser()" style='font-size:14px;'>Sign Out</a></li>
                                 {/if}
                             {/if}
-                            <li><a href="{$smarty.const.siteurl}get-quote/" class="quote" style='font-size:14px;'>GET QUOTE</a></li>
+                           
                         </ul>
                     </div><!--/.nav-collapse -->
                     <div class="nav-mob-buttons">
@@ -150,9 +204,11 @@
                         </div>
                     </div>
                 </nav>
-            </div>
-        </div>
-    </div>
+</div><!--top-head -->		
+</div><!--navi -->		
+		
+		
+	
     <div class="top-nav-mob">
         <div class="top-nav-bg">
             <div class="col-md-12">
