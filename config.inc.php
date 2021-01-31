@@ -1,4 +1,6 @@
 <?php
+
+die('test');
 //require "../ProfessionalFreddyau/config.inc.php";
 ob_start();
 error_reporting(0);
