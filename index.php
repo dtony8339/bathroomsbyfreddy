@@ -1,14 +1,11 @@
 <?php
 
-
  require "config.inc.php";
  require "helpers/functions.php";
 
 
-
 require(''   . $config['smarty_lib'] . 'Smarty.class.php');
 // Smarty Template Engine
-
 
 
 $smarty = new Smarty;
@@ -21,15 +18,18 @@ $smarty->cache_lifetime = 120;
 
 
 // END
-require('' . $config['web_pages'] . 'global.php');
+
+//require('' . $config['web_pages'] . 'global.php');
+require('module/global.php');
 
 
 
 
 if (!isset($_GET['route'])) {
-    
 
-    include("" . $config['web_pages'] . "home.php");
+
+    //include("" . $config['web_pages'] . "home.php");
+    include("module/home.php");
 
     exit;
 

@@ -1,4 +1,6 @@
 <?php
+
+
 // SEO INFORMATION
 $smarty->assign("seo_title", 'Bathrooms By Freddy');
 $smarty->assign("seo_desc", '');
@@ -19,7 +21,10 @@ foreach($results as $result){
 	$area_selection[] = (array)$result;
 }
 $smarty->assign("area_selection", $area_selection);
+
 $cats_array=get_assigned();
+
+
 $smarty->assign("cats", $cats_array);
 $totalwork=get_ourworktotal();
 $smarty->assign("totalwork", $totalwork);

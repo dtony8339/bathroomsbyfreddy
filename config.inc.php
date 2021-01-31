@@ -1,9 +1,9 @@
 <?php
 
-die('test');
+
 //require "../ProfessionalFreddyau/config.inc.php";
 ob_start();
-error_reporting(0);
+error_reporting(1);
 session_start();
 
 //ini_set("date.timezone", "Asia/Karachi");
@@ -15,9 +15,9 @@ session_start();
 // $config['user'] 		= 'root';
 // $config['pass'] 		= '';
 // $config['dbname']	 	= 'professionalfencing_db';
-$config['host'] 		= '77.68.123.108';//'10.131.137.35';
-$config['user'] 		= 'byfreddyprod';
-$config['pass'] 		= 'eBTo_012Abus0159510';
+$config['host'] 		= 'localhost';//'10.131.137.35';
+$config['user'] 		= 'root';//'byfreddyprod';
+$config['pass'] 		= '';//'eBTo_012Abus0159510';
 $config['dbname']		= 'BY_FREDDY';
 
 // for development
@@ -60,7 +60,7 @@ $config['core_action'] 			= $config['sourceRoot']."action/";
 
 
 ///////////////////Smarty Variables 
-$config['web_pages'] = $config['sourceRoot'] . "module/";
+$config['web_pages'] = $config['siteurl'] . "module/";
 $config['web_helpers'] = $config['sourceRoot'] . "helpers/";
 $config['smarty_lib'] = $config['sourceRoot'] . "libs/";
 

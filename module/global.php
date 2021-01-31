@@ -1,4 +1,8 @@
 <?php
+
+
+
+
 $result=get_ProductBathrooms(1);
 $product_bathrooms=[];
 
@@ -6,7 +10,11 @@ while ($row = mysqli_fetch_array($result)){
 	$product_bathrooms[]=$row;
 }
 
+
+
 $our_work_menu_check=get_PlumbersProject();
+
+
 $smarty->assign("products", $product_bathrooms);
 $smarty->assign("our_work_menu_check", $our_work_menu_check);
 $smarty->assign("session_fname", $_SESSION["name"]);

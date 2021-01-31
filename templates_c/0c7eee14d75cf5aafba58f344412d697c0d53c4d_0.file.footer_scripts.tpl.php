@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2021-01-25 11:11:39
+/* Smarty version 3.1.31, created on 2021-01-31 14:12:49
   from "C:\xampp\htdocs\bathroomsbyfreddy\templates\common\footer_scripts.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_600e995ba815e9_59111467',
+  'unifunc' => 'content_6016acd12a9307_42069521',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0c7eee14d75cf5aafba58f344412d697c0d53c4d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\bathroomsbyfreddy\\templates\\common\\footer_scripts.tpl',
-      1 => 1611206860,
+      1 => 1612087971,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_600e995ba815e9_59111467 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6016acd12a9307_42069521 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <?php echo '<script'; ?>

@@ -3,14 +3,14 @@ function get_OurProductsPlumbers($active){
 
     GLOBAL $conn;
 	$sql = "SELECT * FROM `our_products_plumbers` WHERE `is_active` = $active ORDER BY `is_active` ASC";
-	$result = mysqli_query($conn,$sql) or die(mysql_error());
+	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	
 	return $result;
 }
 function get_ProductBathrooms($active){
 	GLOBAL $conn;
 	$sql = "SELECT * FROM `company_products` WHERE `is_active` = $active AND `company_for` = 'BathroomsByFreddy' ORDER BY `is_active` ASC";
-	//$result = mysql_query($sql) or die(mysql_error());
+	//$result = mysql_query($sql) or die(mysqli_error());
     return	$result = mysqli_query($conn, $sql);
     // //return $result;
     
@@ -54,12 +54,12 @@ function getQuotes($email,$id){
 	//$sql = "SELECT * FROM `quickbooks_quotes` LEFT JOIN pipedrive_email ON quickbooks_quotes.BillEmailAddress = pipedrive_email.value LEFT JOIN pipedrive_person ON pipedrive_person.id = pipedrive_email.person_id WHERE quickbooks_quotes.BillEmailAddress = 'waqarulhassan@gmail.com' AND pipedrive_person.company = 1 GROUP BY quickbooks_quotes.BillEmailAddress";
 	if (empty($id)) {
 		$sql = "SELECT qd.* FROM quotes_link_deal as qd LEFT JOIN pipedrive_person as pp ON qd.pipe_person_id = pp.id LEFT JOIN quickbooks_quotes as qq ON qd.quote_id = qq.q_quotes_id WHERE pp.company = 1 AND qd.approve = 1 AND qq.BillEmailAddress = '$email'";
-		$result = mysqli_query($conn,$sql) or die(mysql_error());
+		$result = mysqli_query($conn,$sql) or die(mysqli_error());
 		//print_r($result);
     	return $result;
 	}else{
 		$sql = "SELECT qd.* FROM quotes_link_deal as qd LEFT JOIN pipedrive_person as pp ON qd.pipe_person_id = pp.id LEFT JOIN quickbooks_quotes as qq ON qd.quote_id = qq.q_quotes_id WHERE pp.company = $id AND qd.approve = 1 AND qq.BillEmailAddress = '$email'";
-			$result = mysqli_query($conn,$sql) or die(mysql_error());
+			$result = mysqli_query($conn,$sql) or die(mysqli_error());
 			return $result;
 	}
 	
@@ -67,7 +67,7 @@ function getQuotes($email,$id){
 function getQcTokens(){
     GLOBAL $conn;
 	$sql = "SELECT * FROM `quickbooks_tokens`";
-	$result = mysqli_query($conn,$sql) or die(mysql_error());
+	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	//print_r($result);
     return $result;
 }
@@ -78,7 +78,7 @@ function getUserId($id){
 	}else{
 		 $sql = "select * from bloggers_users where blogger_username = '$id'";
 		// die();
-		$result = mysqli_query($conn,$sql) or die(mysql_error());
+		$result = mysqli_query($conn,$sql) or die(mysqli_error());
 		if(mysqli_num_rows($result)){
 			while ( $row = mysqli_fetch_assoc($result) ) {
 				return $cus_id =  $row['id'];
@@ -107,7 +107,7 @@ function get_invoice_sum($email,$status){
 	 
 	  $sql = "SELECT SUM(total) as finaltotal FROM `freshbook_invoices` WHERE `email` = '$email' AND  `status` = '$status' ";
 	 }
-      $result = mysqli_query($conn,$sql) or die(mysql_error());
+      $result = mysqli_query($conn,$sql) or die(mysqli_error());
       return $result;
 }
 
@@ -116,7 +116,7 @@ function get_application($email){
 
 	
 	$sql = "SELECT * FROM `platform_clients` WHERE `email` = '$email'";
-    $result = mysqli_query($conn,$sql) or die(mysql_error());
+    $result = mysqli_query($conn,$sql) or die(mysqli_error());
     if(mysqli_num_rows($result)){
 		$row = mysqli_fetch_assoc($result);
 		 $cus_id =  $row['id'];
@@ -128,7 +128,7 @@ function get_application($email){
 	   $sql = "SELECT platform_apps.*,platform_permission.client_id FROM platform_permission INNER JOIN platform_apps ON platform_permission.app_id=platform_apps.id WHERE platform_permission.client_id = $cus_id AND platform_permission.site_id = 99";
 
 		
-    $result = mysqli_query($conn,$sql) or die(mysql_error());
+    $result = mysqli_query($conn,$sql) or die(mysqli_error());
     return $result;
 
    
@@ -139,7 +139,7 @@ function get_application($email){
 function get_OurProductsFreddy($active){
     GLOBAL $conn;
 	$sql = "SELECT * FROM `our_products_freddy` WHERE `is_active` = $active ORDER BY `is_active` ASC";
-	$result = mysqli_query($conn,$sql) or die(mysql_error());
+	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	
 	return $result;
 }
@@ -147,7 +147,7 @@ function get_OurProductsFreddy($active){
 //  $sql = "SELECT blog_projects.site_project,blog.id,blog.title,blog.short_content,blog.Content,blog.image FROM blog LEFT JOIN blog_projects ON blog_projects.id = blog.project_id where blog_projects.site_project = $pid and blog.status = $status
 // ";
 
-// 	$result = mysqli_query($conn,$sql) or die(mysql_error());
+// 	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	
 // 	return $result;
 // }
@@ -155,27 +155,27 @@ function get_Blogs2($id,$status){
     GLOBAL $conn;
 	$sql = "SELECT * FROM `blog` where id=$id AND status=$status";
 
-	$result = mysqli_query($conn,$sql) or die(mysql_error());
+	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	
 	return $result;
 }
 function get_Work(){
     GLOBAL $conn;
 	$sql = "SELECT work_project.*, work_project_img.* FROM work_project, work_project_img order by rand() limit 10";
-	$result = mysqli_query($conn,$sql) or die(mysql_error());
+	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	
 	return $result;
 }
 function get_TradeWork(){
     GLOBAL $conn;
 	$sql = "SELECT work_project.*, work_project_img.* FROM work_project, work_project_img order by rand() limit 10";
-	$result = mysqli_query($conn,$sql) or die(mysql_error());
+	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	
 	return $result;
 }
 // function get_fencigWork($lim){
 // 	$sql = "SELECT DISTINCT tvs1.*, tvs2.* FROM work_project tvs1 JOIN work_project_img tvs2 ON tvs1.id = tvs2.ref_id where tvs1.project_type='fencing' limit 4";
-// 	$result = mysqli_query($conn,$sql) or die(mysql_error());
+// 	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	
 // 	return $result;
 // }
@@ -189,7 +189,7 @@ function get_Project($pro,$id=0){
 		$sql = "SELECT * FROM work_project WHERE project_type = '$pro' ORDER BY `work_project`.`id` DESC limit 4";
 	}
 	
-    $result = mysqli_query($conn,$sql) or die(mysql_error());
+    $result = mysqli_query($conn,$sql) or die(mysqli_error());
 	while($data=mysqli_fetch_assoc($result)){
 		$data['top_img'] = getTopImage("work_project_img",$data['id']);
 		$tmp[] = $data;
@@ -201,7 +201,7 @@ function get_Project($pro,$id=0){
 function getTopImage($table,$id){
     GLOBAL $conn;
 	$sql = "SELECT * FROM $table where ref_id = $id ORDER BY id";
-	$result = mysqli_query($conn,$sql) or die(mysql_error());
+	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	
 	if(mysqli_num_rows($result)){
 		$row = mysqli_fetch_assoc($result);
@@ -220,7 +220,7 @@ function get_WorkProject($id=0){
 		$sql = "SELECT * FROM work_project order by rand() limit 10";
 	}
 	
-    $result = mysqli_query($conn,$sql) or die(mysql_error());
+    $result = mysqli_query($conn,$sql) or die(mysqli_error());
 	while($data=mysqli_fetch_assoc($result)){
 		$data['top_img'] = getWorkTopImage("work_project_img",$data['id']);
 		$tmp[] = $data;
@@ -232,7 +232,7 @@ function get_WorkProject($id=0){
 function getWorkTopImage($table,$id){
     GLOBAL $conn;
 	$sql = "SELECT * FROM $table where ref_id = $id ORDER BY id";
-	$result = mysqli_query($conn,$sql) or die(mysql_error());
+	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	
 	if(mysqli_num_rows($result)){
 		$row = mysqli_fetch_assoc($result);
@@ -245,7 +245,7 @@ function getWorkTopImage($table,$id){
 function get_email($email){
     GLOBAL $conn;
 	$sql = "SELECT * FROM `platform_clients` WHERE email = '$email'";
-	 $result = mysqli_query($conn,$sql) or die(mysql_error());
+	 $result = mysqli_query($conn,$sql) or die(mysqli_error());
     return $result;
 }
 
@@ -260,12 +260,12 @@ function getProject($id=0){
     GLOBAL $conn;
 	if ($id==0){
 		$sql="SELECT * FROM blog_projects ORDER BY title ASC";
-		$result = mysqli_query($conn,$sql) or die(mysql_error());
+		$result = mysqli_query($conn,$sql) or die(mysqli_error());
 		
 		return $result; 
 	}else{
 		$sql="SELECT * FROM blog_projects WHERE id=$id";
-		$result = mysqli_query($conn,$sql) or die(mysql_error());
+		$result = mysqli_query($conn,$sql) or die(mysqli_error());
 		$row = mysqli_fetch_assoc($result);
 		
 		return $row; 
@@ -276,7 +276,7 @@ function getProject($id=0){
 function get_blog_cat(){
     GLOBAL $conn;
 	$sql = "SELECT * FROM `blog_category`";
-	$result = mysqli_query($conn,$sql) or die(mysql_error());
+	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	
 	return $result;
 }
@@ -286,7 +286,7 @@ function get_blog2($user_id,$project_id){
 	$user = strtolower(str_replace("_"," ",$user_id));
 	$id = get_user_id($user);
 	$sql = "SELECT count(1) AS n FROM `blog` WHERE user_id=$id AND project_id=$project_id";	
-	$result = mysqli_query($conn,$sql) or die(mysql_error());
+	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	
 	$row=mysqli_fetch_assoc($result);
 	
@@ -296,7 +296,7 @@ function get_blog2($user_id,$project_id){
 function get_user_id($user){
     GLOBAL $conn;
 	$sql = "SELECT id FROM `bloggers_users` WHERE blogger_username='$user'";
-	$result = mysqli_query($conn,$sql) or die(mysql_error());
+	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	
 	if(mysqli_num_rows($result) > 0 ){
 		$row=mysqli_fetch_assoc($result);
@@ -433,7 +433,7 @@ function get_PlumbersProjectId($ref_id){
     GLOBAL $conn;
 	$sql = "SELECT * FROM work_project WHERE project_type = 'plumbers' and tradesman_id=$ref_id";
 	
-	$result = mysqli_query($conn,$sql) or die(mysql_error());
+	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	while($data=mysqli_fetch_assoc($result)){
 		$date = new DateTime($data['date']);
         $data['date_added'] = $date->format("F, Y");
@@ -447,7 +447,7 @@ function get_PlumbersProjectId($ref_id){
 function get_PlumbersTrademan($ref_id){
     GLOBAL $conn;
 	echo $sql = "SELECT * FROM tradesman WHERE id=$ref_id";
-	$result = mysqli_query($conn,$sql) or die(mysql_error());
+	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	while($data=mysqli_fetch_assoc($result)){
 		$tmp= $data['name'];
 	}
@@ -465,7 +465,7 @@ function get_PlumbersProject($ref_id=0){
 		//$sql = "SELECT * FROM `plumbers_project` WHERE id=$ref_id";
 		$sql = "SELECT * FROM work_project WHERE project_type = 'BathroomsByFreddy' and id=$ref_id";
 	}
-	/*$result = mysqli_query($conn,$sql) or die(mysql_error());
+	/*$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	
 	return $result;*/
 	
@@ -510,7 +510,7 @@ function get_PlumbersProjectImg($ref_id=0){
 		//$sql = "SELECT * FROM `plumbers_project_img` WHERE ref_id=$ref_id ORDER BY `plumbers_project_img`.`img` ASC";
 		$sql = "SELECT * FROM `work_project_img` WHERE ref_id=$ref_id ORDER BY id DESC";
 	}
-	$result = mysqli_query($conn,$sql) or die(mysql_error());
+	$result = mysqli_query($conn,$sql) or die(mysqli_error());
 	
 	return $result;
 }
@@ -716,7 +716,7 @@ function get_reviws_count(){
 
 function get_reviws_average(){
     GLOBAL $conn;
-    $sql = "SELECT ROUND(avg(stars),1) as average_rating FROM Reviews WHERE company_id=160";
+    $sql = "SELECT ROUND(avg(stars),1) as average_rating FROM reviews WHERE company_id=160";
    //echo $sql;exit;
     $result = mysqli_query($conn, $sql);
     $data=mysqli_fetch_assoc($result);
