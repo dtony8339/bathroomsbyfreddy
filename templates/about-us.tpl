@@ -33,6 +33,9 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<!--<div class="call-us">{$contact_number}</div>-->
+				
+				<h1 class="banner_title">ABOUT US</h1>
+				
 			</div>
 		</div>
 	</div>
@@ -59,21 +62,41 @@
 <!--Start Content-->
 
 
-<section class="content"> 
+<section class="content about-us"> 
 	<div class="container">
-		<h2 class="ourmate-title"><span>OUR TOTAL BATHROOM SERVICE</span></h2>
-        <p>ByFreddy has a qualified and complete team of trades to do everything required for new or renovated bathrooms. We can do bathrooms from before the foundations are even in the ground. This includes design, ground preparation, plumbing, electrical, bricklaying, floor and wall construction and roofing. After that, we do the interior finishing such as tiling, fixtures and accessories. We don’t go until you have a beautiful, fully functional bathroom that meets your style requirements. The same applies to renovations and repairs. Whatever skills are needed, we have got you covered.</p>
-        
-        <h3>WHY CHOOSE US?</h3>
+	<center>
+	<h2 class="ourmate-title"><span>OUR TOTAL<br> BATHROOM SERVICE</span></h2>
+	<p>ByFreddy has a qualified and complete team of trades to do everything required for new or renovated bathrooms. We can do bathrooms from before the foundations are even in the ground. This includes design, ground preparation, plumbing, electrical, bricklaying, floor and wall construction and roofing. After that, we do the interior finishing such as tiling, fixtures and accessories. We don’t go until you have a beautiful, fully functional bathroom that meets your style requirements. The same applies to renovations and repairs. Whatever skills are needed, we have got you covered.</p>
+	<div class="gap20"></div>
+	<h3>WHY CHOOSE US?</h3>
+	<div class="gap20"></div>
+	</center>
+	
+	<div class="col-md-4">
+		<div class="panelbox">
+			<img src="{$smarty.const.root_img}fast.png">
+			<h4>WE ARE <br>FAST</h4>
+			<p>Your time is our time too. We aim to stick to the agreed time schedule. Because we have all trades represented in our company, it saves time when additional tradespeople are needed for your job.</p>
+		</div>	
+	</div>	
+	<div class="col-md-4">
+		<div class="panelbox">
+			<img src="{$smarty.const.root_img}reliable.png">
+			<h4>WE'RE <br>RELIABLE</h4>
+			<p>We are mindful of your budget and do our best to ensure we stay within quote. We will complete your job properly under any circumstances, and communicate with you all the way. If you have any problems with the job, just ask us and we will attend to them.</p>
+		</div>	
+	</div>	
+	<div class="col-md-4">
+		<div class="panelbox">
+			<img src="{$smarty.const.root_img}services.png">
+			<h4>PROFESSIONAL<br> SERVICE</h4>
+			<p>Our bathroom team includes a licensed, experienced builder. Thus we can ensure every job is compliant with regulations regarding waterproofing, building codes and bath installation, as well as electrical and plumbing. We value your custom and aim to look after you.</p>
+		</div>	
+	</div>	
 
-<h4>WE ARE FAST</h4>
-<p>Your time is our time too. We aim to stick to the agreed time schedule. Because we have all trades represented in our company, it saves time when additional tradespeople are needed for your job.</p>
 
-<h4>WE'RE RELIABLE</h4>
-<p>We are mindful of your budget and do our best to ensure we stay within quote. We will complete your job properly under any circumstances, and communicate with you all the way. If you have any problems with the job, just ask us and we will attend to them.</p>
 
-<h4>PROFESSIONAL SERVICE</h4>
-<p>Our bathroom team includes a licensed, experienced builder. Thus we can ensure every job is compliant with regulations regarding waterproofing, building codes and bath installation, as well as electrical and plumbing. We value your custom and aim to look after you.</p>
+
 
 
 		
@@ -87,8 +110,8 @@
 
 <style>
 .top-banner.ourteam {
-	background-size: contain !important;
-	background: url('{$smarty.const.root_img}team-freddy.jpg');
+	background-size: cover !important;
+	background: url('{$smarty.const.root_img}team-freddy.png');
     background-position: center center;
     max-height: 400px !important;
     height: 100%;

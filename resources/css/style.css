@@ -5038,7 +5038,7 @@ h1.ourmate-title {
 h2.ourmate-title:before,
 h1.ourmate-title:before {
 
-    border-top: 2px solid #f79121;
+    /*border-top: 2px solid #f79121;*/
 
     content: "";
 
@@ -5064,11 +5064,11 @@ h1.ourmate-title:before {
 
 h2.ourmate-title span,
 h1.ourmate-title span {
-
 	background: #fff;
-
     padding: 0 15px;
 	line-height: normal;
+	font-size: 72px;
+    font-weight: 400;
 
 }
 @media(max-width:550px){
@@ -9118,8 +9118,47 @@ text-align:left;
     font-weight: 400 !important;
 }
 
+.ourteam h1.banner_title{
+	font-size:100px;
+	font-weight:bold;
+	text-align:center;
+	margin-top: 150px;
+}
 
-
+.navbar{
+	margin-bottom:0;
+}
+.about-us{
+	background-image: url(../img/about-us-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    background-position: center center;		
+}
+.about-us h3{
+	font-size: 48px;
+    color: #f79122;
+    text-transform: uppercase;
+    line-height: normal;
+    margin: 20px auto;
+	font-weight:600;
+}
+.panelbox{
+    text-align: center;	
+}
+.panelbox img{
+	margin-bottom:10px;
+}
+.panelbox h4{
+	font-size:36px;
+	color:#f79122;
+	font-weight:500;
+	line-height:normal;
+}
+.panelbox p{
+	color:#535353;
+	font-size:20px;
+}
 
 /* Media Query  */
 @media(max-width:1024px){
@@ -9180,6 +9219,7 @@ text-align:left;
 	}
 }
 
+
 @media(max-width:767px){
 	.txtss,
 	.imgss {
@@ -9193,6 +9233,15 @@ text-align:left;
 @media(min-width:1280px){
 	.navbar-nav li {
 		padding: 0 12px;
+	}
+	.navbar-nav li ul.dropdown-menu li:first-child {
+		display: block;
+		padding-left: 12px;
+	}
+}
+@media(min-width:1100px){
+	.navbar-nav li {
+		padding: 0 10px;
 	}
 	.navbar-nav li ul.dropdown-menu li:first-child {
 		display: block;
