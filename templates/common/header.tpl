@@ -70,7 +70,7 @@
 			</div><!-- top-head" -->
 		</div>
 		</div>
-		 
+		
 
 <div class="network_frednet" id="network_frednet">
 <!--
