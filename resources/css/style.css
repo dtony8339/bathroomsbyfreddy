@@ -9010,6 +9010,7 @@ ul.checklist{
     font-size: 24px;
     width: 95%;
     background: none;
+	-moz-appearance: none;
 }
 .callus{
 	color: #fff;
