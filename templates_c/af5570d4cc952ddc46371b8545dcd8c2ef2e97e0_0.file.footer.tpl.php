@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2021-01-25 11:11:39
+/* Smarty version 3.1.31, created on 2021-01-31 14:19:14
   from "C:\xampp\htdocs\bathroomsbyfreddy\templates\common\footer.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_600e995b8cd100_10111430',
+  'unifunc' => 'content_6016ae52de6ff5_74973253',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'af5570d4cc952ddc46371b8545dcd8c2ef2e97e0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\bathroomsbyfreddy\\templates\\common\\footer.tpl',
-      1 => 1611206860,
+      1 => 1612099004,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,32 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_600e995b8cd100_10111430 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6016ae52de6ff5_74973253 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="footer-widget">
 	<div class="container">
-    	<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+		<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
+	<a href="/byfreddy/">
+		<img src="<?php echo @constant('root_img');?>
+new-bathrooms-by-freedy-logo.png" alt="bathrooms" class="img-responsive">
+	</a>
+	<p class="desc">
+	We love doing bathrooms! Our bathroom team has the benefit of experienced licensed builders who can build or renovate your bathroom from the ground up in any style.
+	</p>
+	<div class="socmedia">
+		<img src="<?php echo @constant('root_img');?>
+icon-utube.png" alt="" class="">
+		<img src="<?php echo @constant('root_img');?>
+icon-tw.png" alt="" class="">
+		<img src="<?php echo @constant('root_img');?>
+icon-insta.png" alt="" class="">
+		<img src="<?php echo @constant('root_img');?>
+icon-fb.png" alt="" class="">
+	</div>
+		
+		
+		</div>
+    	<div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12">
         	<h3>Homeowners</h3>
             <ul>
             	<li><a href="#">Post a job</li>
@@ -34,7 +55,7 @@ function content_600e995b8cd100_10111430 (Smarty_Internal_Template $_smarty_tpl)
                 <li><a href="#">Competitions</li>
             </ul>
         </div>
-    	<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+    	<div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12">
         	<h3>Advice Centre</h3>
             <ul>
             	<li><a href="#">Advice guides</a></li>
@@ -44,7 +65,7 @@ function content_600e995b8cd100_10111430 (Smarty_Internal_Template $_smarty_tpl)
             	<li><a href="#">Ask a tradesman</a></li>
             </ul>
         </div>
-    	<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+    	<div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12">
         	<h3>Tradesmen</h3>
             <ul>
             	<li><a href="#">Trade sign up</a></li>
@@ -54,7 +75,7 @@ function content_600e995b8cd100_10111430 (Smarty_Internal_Template $_smarty_tpl)
             	<li><a href="#">Tradesman support</a></li>
             </ul>
         </div>
-    	<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+    	<div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12">
         	<h3>Company</h3>
             <ul>
             	<li><a href="#">Our mission</a></li>
@@ -69,15 +90,18 @@ function content_600e995b8cd100_10111430 (Smarty_Internal_Template $_smarty_tpl)
 <footer class="stackfooter">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
-      	&copy; 2019 freddyit.com    Terms and conditions   Privacy notice   Cookie policy<br>
+      <div class="col-sm-12">
+		<p class="footer-copyright">      	&copy; 2019 freddyit.com    Terms and conditions   Privacy notice   Cookie policy<br>
 REGISTERED IN ENGLAND NO. 11723808
+</p>
       </div>
-      <div class="col-sm-6 icons">
+	  
+      <div class="col-sm-6 icons" style="display:none;">
       	<a href="#" target="_blank"><img src="https://freddyit.com/resources/img/logo.png"></a> <a href="https://www.facebook.com/paintingbyfreddyuk/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
       </div>
     </div>
 </footer>
+
 
 <!--Jquery-->
 

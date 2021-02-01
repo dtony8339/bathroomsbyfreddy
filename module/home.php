@@ -1,4 +1,6 @@
 <?php
+
+
 // SEO INFORMATION
 $smarty->assign("seo_title", 'Bathrooms By Freddy');
 $smarty->assign("seo_desc", '');
@@ -19,7 +21,10 @@ foreach($results as $result){
 	$area_selection[] = (array)$result;
 }
 $smarty->assign("area_selection", $area_selection);
+
 $cats_array=get_assigned();
+
+
 $smarty->assign("cats", $cats_array);
 $totalwork=get_ourworktotal();
 $smarty->assign("totalwork", $totalwork);
@@ -33,8 +38,14 @@ $totalfencer=get_fencer_count();
 $smarty->assign("totalfencer", $totalfencer);
 
 // Call Page Templates
-$smarty->display('' . $config['smarty_templates'] . 'common/header_scripts.tpl');
-$smarty->display('' . $config['smarty_templates'] . 'common/header.tpl');
-$smarty->display('' . $config['smarty_templates'] . 'home.tpl');
-$smarty->display('' . $config['smarty_templates'] . 'common/footer.tpl');
-$smarty->display('' . $config['smarty_templates'] . 'common/footer_scripts.tpl');
+// $smarty->display('' . $config['smarty_templates'] . 'common/header_scripts.tpl');
+// $smarty->display('' . $config['smarty_templates'] . 'common/header.tpl');
+// $smarty->display('' . $config['smarty_templates'] . 'home.tpl');
+// $smarty->display('' . $config['smarty_templates'] . 'common/footer.tpl');
+// $smarty->display('' . $config['smarty_templates'] . 'common/footer_scripts.tpl');
+
+$smarty->display( '../templates/common/header_scripts.tpl');
+$smarty->display('../templates/common/header.tpl');
+$smarty->display( '../templates/home.tpl');
+$smarty->display( '../templates/common/footer.tpl');
+$smarty->display( '../templates/common/footer_scripts.tpl');
