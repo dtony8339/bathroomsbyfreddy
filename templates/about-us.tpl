@@ -186,7 +186,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e8ea', end
 }
 @media (max-width: 700px){
 .top-banner.ourteam {
-    max-height: 150px !important;
+    max-height: 10% !important;
      background-size: cover !important;
 }
 }

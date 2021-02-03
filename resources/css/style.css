@@ -3455,7 +3455,7 @@ font-size: 9.5px;
 
 /*contact us styling*/
 
-.cont-span{color: #f79122;font-size:18.5px;}
+.cont-span{color: #1e1e1e;font-size:20px;}
 
 .cont-quote{margin-top: 25px; margin-bottom:25px;}
 
@@ -6252,9 +6252,18 @@ ul.dropdown-content li {
     padding: 10px;
 
     margin: 5px auto;
+	background: #f4f4f4;
+    border: 0;
+	margin-bottom: 20px
 
 }
-
+#contact-form label {
+	font-weight:500;
+}
+textarea.form-control{
+	background: #f4f4f4;
+    border: 0;	
+}
 #contact-form input[type="submit"] {
 
     background: #f79122;
@@ -6273,7 +6282,12 @@ ul.dropdown-content li {
 
 }
 
-
+.btn-info{
+	border-radius:5px !important;
+	font-weight:900;
+	font-size:36px;
+	margin-top: 25px;
+}
 
 .contact_para_desc{
 
@@ -9160,6 +9174,82 @@ text-align:left;
 	font-size:20px;
 }
 
+
+.contact-banner {
+	background-size: cover !important;
+	background: url(../img/contact-banner.jpg);
+    background-position: center center;
+    max-height: 285px !important;
+    height: 100%;
+    padding: 0;
+	
+	 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e7e8ea+1,fbfbfb+50,e7e8ea+100 */
+background-color: rgb(231,232,234); /* Old browsers */
+background-color: -moz-linear-gradient(top, rgba(231,232,234,1) 1%, rgba(251,251,251,1) 50%, rgba(231,232,234,1) 100%); /* FF3.6-15 */
+background-color: -webkit-linear-gradient(top, rgba(231,232,234,1) 1%,rgba(251,251,251,1) 50%,rgba(231,232,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background-color: linear-gradient(to bottom, rgba(231,232,234,1) 1%,rgba(251,251,251,1) 50%,rgba(231,232,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e8ea', endColorstr='#e7e8ea',GradientType=0 ); /* IE6-9 */
+    background-repeat: no-repeat;
+}
+
+
+.contact-banner h1.banner_title {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.need_quote{
+	background: rgb(247, 145, 34);
+	height: auto;
+    color: white;
+    padding: 12px 50px;
+    margin: 0;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-size: 26px;
+}
+
+.gap20{
+	height:20px;
+	display:block;
+}
+
+.Individual-form{
+	margin-top:40px;
+}
+
+.contact-usInfo{
+    background: #1e1e1e;
+    padding: 120px 0;
+    margin: 20px 0;
+}
+.contactInfo{
+    width: 80%;
+    margin: auto;
+}
+.contactInfo .cont-span{
+	color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.contactInfo .cont-span .fa{}
+.near-u{
+    width: 80%;
+}
+.near-u h1{
+    font-size: 48px;
+    line-height: normal;
+    color: #fff!important;
+    text-transform: none;
+}
+
+
+
 /* Media Query  */
 @media(max-width:1024px){
 	.top-head {
@@ -9217,8 +9307,33 @@ text-align:left;
 		height:20px;
 		display:block;
 	}
+	.ourteam h1.banner_title{
+		margin: 80px auto;
+		font-size: 80px;	
+	}
+	h2.ourmate-title span, h1.ourmate-title span {
+		font-size: 100%;
+	}
+	.panelbox {
+		text-align: center;
+		width: 90%;
+		margin: auto auto 60px;
+	}
+	.contact-banner {
+		max-height: 100%!important;
+		height: auto;
+	}
 }
-
+@media (max-width: 700px){
+	.top-banner.ourteam {
+		max-height: 10%!important;
+		background-size: cover !important;
+	}
+	.ourteam h1.banner_title {
+		margin: 10px auto;
+		font-size: -webkit-xxx-large;
+	}
+}
 
 @media(max-width:767px){
 	.txtss,
