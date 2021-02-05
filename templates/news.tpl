@@ -1,5 +1,9 @@
 <link rel="stylesheet" href="{$smarty.const.root_css}lightbox.min.css">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <style>
 
 {literal}
@@ -25,10 +29,18 @@
 </style>
 
 
-
-
-
+<!--Start Top Banner-->
+<section class="contact-banner ourteam">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1 class="banner_title">NEWS</h1>				
+			</div>
+		</div>
+	</div>
+</section>
 <!--End Top Banner-->
+
 
 
 
@@ -45,19 +57,149 @@
   		<div class="col-sm-12">
 
 <div class="space25"></div>
-<h2 class="ourmate-title"><span>News</span></h2>
+<h2 class="ourmate-title"><span>BLOG</span></h2>
 
   		</div>
 
   	</div>
-
+<div class="all">
+	<a href="#all">See all</a>
+</div>
 <div class="space25"></div>
 
 <!--PHP WHILE LOOP HERE-->  
 
   <div class="row">
 
-            <div class="col-md-8">
+            <div class="col-md-12">
+			
+			
+			<div class="blogsBox">
+				<div class="bbox row">
+					<div class="bbox_img">
+						<img src="{$smarty.const.root_img}blog_1.png">
+					</div>
+					<div class="bbox_desc">
+						<h3 class="gold">SUMMER CRACK REPAIR - WOODEN FENCING BERKSHIRE OESTE TIPS</h3>
+						<p>When there is a prolonged hot dry weather in spring or summer, cracks may appear. Summer crack repai...</p>
+					</div>
+					<div class="bbox_link">
+						<a href="#" class="gold">Know more</a>
+					</div>
+				</div>
+				<div class="bbox row">
+					<div class="bbox_img">
+						<img src="{$smarty.const.root_img}blog_2.png">
+					</div>
+					<div class="bbox_desc">
+						<h3 class="gold">EASY TO DO CRACK REPAIR AT HOME IN GLOUCESTERSHIRE ABBEYMEAD</h3>
+						<p>Cracks in the driveway are one of the most common problems among homeowners. However, it's a known f...</p>
+					</div>
+					<div class="bbox_link">
+						<a href="#" class="gold">Know more</a>
+					</div>
+				</div>
+				<div class="bbox row">
+					<div class="bbox_img">
+						<img src="{$smarty.const.root_img}blog_3.png">
+					</div>
+					<div class="bbox_desc">
+						<h3 class="gold">TOP 5 PROJECTS YOU CAN HANDLE ON YOUR OWN IN WILTSHIRE ABLINGTON</h3>
+						<p>Cracks in the driveway are one of the most common problems among homeowners. However, it's a known f...</p>
+					</div>
+					<div class="bbox_link">
+						<a href="#" class="gold">Know more</a>
+					</div>
+				</div>
+				<div class="bbox row">
+					<div class="bbox_img">
+						<img src="{$smarty.const.root_img}blog_4.png">
+					</div>
+					<div class="bbox_desc">
+						<h3 class="gold">4 PROJECTS YOU CAN DO IN ONE WEEKEND IN FORDSHIRE AMBROSDEN</h3>
+						<p>Fence contractors berkshire, news what you can do on the weekend.</p>
+					</div>
+					<div class="bbox_link">
+						<a href="#" class="gold">Know more</a>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+								<div class="bbox row">
+					<div class="bbox_img">
+						<img src="{$smarty.const.root_img}blog_1.png">
+					</div>
+					<div class="bbox_desc">
+						<h3 class="gold">SUMMER CRACK REPAIR - WOODEN FENCING BERKSHIRE OESTE TIPS</h3>
+						<p>When there is a prolonged hot dry weather in spring or summer, cracks may appear. Summer crack repai...</p>
+					</div>
+					<div class="bbox_link">
+						<a href="#" class="gold">Know more</a>
+					</div>
+				</div>
+				<div class="bbox row">
+					<div class="bbox_img">
+						<img src="{$smarty.const.root_img}blog_2.png">
+					</div>
+					<div class="bbox_desc">
+						<h3 class="gold">EASY TO DO CRACK REPAIR AT HOME IN GLOUCESTERSHIRE ABBEYMEAD</h3>
+						<p>Cracks in the driveway are one of the most common problems among homeowners. However, it's a known f...</p>
+					</div>
+					<div class="bbox_link">
+						<a href="#" class="gold">Know more</a>
+					</div>
+				</div>
+				<div class="bbox row">
+					<div class="bbox_img">
+						<img src="{$smarty.const.root_img}blog_3.png">
+					</div>
+					<div class="bbox_desc">
+						<h3 class="gold">TOP 5 PROJECTS YOU CAN HANDLE ON YOUR OWN IN WILTSHIRE ABLINGTON</h3>
+						<p>Cracks in the driveway are one of the most common problems among homeowners. However, it's a known f...</p>
+					</div>
+					<div class="bbox_link">
+						<a href="#" class="gold">Know more</a>
+					</div>
+				</div>
+				<div class="bbox row">
+					<div class="bbox_img">
+						<img src="{$smarty.const.root_img}blog_4.png">
+					</div>
+					<div class="bbox_desc">
+						<h3 class="gold">4 PROJECTS YOU CAN DO IN ONE WEEKEND IN FORDSHIRE AMBROSDEN</h3>
+						<p>Fence contractors berkshire, news what you can do on the weekend.</p>
+					</div>
+					<div class="bbox_link">
+						<a href="#" class="gold">Know more</a>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</div>
+			
+			
+			
+			
 
        {if !empty($blogs)}
 
@@ -186,14 +328,138 @@
           {/foreach}
 
             {else}
-
+<!--
             <h3 class="text-center">No Blog found</h3>
-
+-->
             {/if}
 
       </div>
 
-          <div class="col-md-4">
+<div class="space25"></div>
+<h2 class="ourmate-title"><span>MY MATES POSTS</span></h2>
+<div class="row">
+	<div class="col-md-12">
+		<div class="mates">
+			<div class="sliderBox">
+			
+<div id="slidess" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#slidess" data-slide-to="0" class="active"></li>
+    <li data-target="#slidess" data-slide-to="1"></li>
+    <li data-target="#slidess" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+					<div class="sBox">
+						<img src="{$smarty.const.root_img}mates_1.png">
+						<br>
+						<div class="text">HOW TO BE <br> A GARDENING EXPERT</div>
+						<br>
+						<a href="#" class="gold">Know more&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+					<div class="sBox">
+						<img src="{$smarty.const.root_img}mates_2.png">
+						<br>
+						<div class="text">TEAMWORK CAN BRING <br>TO THE BUSINESS </div>
+						<br>
+						<a href="#" class="gold">Know more&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+					<div class="sBox">
+						<img src="{$smarty.const.root_img}mates_3.png">
+						<br>
+						<div class="text">Test</div>
+						<br>
+						<a href="#" class="gold">Know more&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+					<div class="sBox">
+						<img src="{$smarty.const.root_img}mates_4.png">
+						<br>
+						<div class="text">HOW TO BE<br> A GARDENING EXPERT</div>
+						<br>
+						<a href="#" class="gold">Know more&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+    </div>
+    <div class="carousel-item">
+					<div class="sBox">
+						<img src="{$smarty.const.root_img}unknown.png">
+						<br>
+						<div class="text">HOW TO BE <br> A GARDENING EXPERT</div>
+						<br>
+						<a href="#" class="gold">Know more&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+					<div class="sBox">
+						<img src="{$smarty.const.root_img}unknown.png">
+						<br>
+						<div class="text">TEAMWORK CAN BRING <br>TO THE BUSINESS </div>
+						<br>
+						<a href="#" class="gold">Know more&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+					<div class="sBox">
+						<img src="{$smarty.const.root_img}unknown.png">
+						<br>
+						<div class="text">Test</div>
+						<br>
+						<a href="#" class="gold">Know more&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+					<div class="sBox">
+						<img src="{$smarty.const.root_img}unknown.png">
+						<br>
+						<div class="text">HOW TO BE<br> A GARDENING EXPERT</div>
+						<br>
+						<a href="#" class="gold">Know more&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+    </div>
+    <div class="carousel-item">
+					<div class="sBox">
+						<img src="{$smarty.const.root_img}unknown.png">
+						<br>
+						<div class="text">HOW TO BE <br> A GARDENING EXPERT</div>
+						<br>
+						<a href="#" class="gold">Know more&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+					<div class="sBox">
+						<img src="{$smarty.const.root_img}unknown.png">
+						<br>
+						<div class="text">TEAMWORK CAN BRING <br>TO THE BUSINESS </div>
+						<br>
+						<a href="#" class="gold">Know more&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+					<div class="sBox">
+						<img src="{$smarty.const.root_img}unknown.png">
+						<br>
+						<div class="text">Test</div>
+						<br>
+						<a href="#" class="gold">Know more&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+					<div class="sBox">
+						<img src="{$smarty.const.root_img}unknown.png">
+						<br>
+						<div class="text">HOW TO BE<br> A GARDENING EXPERT</div>
+						<br>
+						<a href="#" class="gold">Know more&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#slidess" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#slidess" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>		
+			
+			
+			</div>
+		</div>
+	</div>
+</div>
+          <div class="col-md-12" style="display:none;">
 
               <div class="latest-post">
 
@@ -452,5 +718,36 @@ $(function(){
   });
 
 });
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if(slideIndex > slides.length) {
+  slideIndex = 1;
+  }    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+
+
+
+
+
+
+
+
 
 </script>

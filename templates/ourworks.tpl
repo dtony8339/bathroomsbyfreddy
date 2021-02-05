@@ -1,27 +1,172 @@
 <link rel="stylesheet" href="{$smarty.const.root_css}lightbox.min.css">
 <link rel="stylesheet" href="{$smarty.const.root_css}font-awesome.min.css">
 <link rel="stylesheet" href="{$smarty.const.root_css}prettyPhoto.css">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <!-- slick -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
-
+<!--Start Top Banner-->
+<section class="contact-banner ourteam">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1 class="banner_title">OUR WORK</h1>
+				
+			</div>
+		</div>
+	</div>
+</section>
+<!--End Top Banner-->
+<div class="padding">
 <!--Start Breadcrumbs-->
 <section>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
                 <div class="work-header">
-                     <h2>“Price Is What You Pay, Value Is What You Get”</h2> Warren Buffet</h2>
-                    <p>Feel free to browse through Bathrooms By Freddy photo gallery to get the best ideas for fencing solutions including garden and commercial premises.</p>
+					<img src="{$smarty.const.root_img}qoute-l.png" class="left-qoute f-left"/>
+					<div class="work">
+						
+							<h2>“Price Is What You Pay, Value Is What You Get”</h2> <p> Warren Buffet</p>
+
+					 </div>	
+					<img src="{$smarty.const.root_img}qoute-r.png" class="right-qoute f-right"/>
                 </div>
+
+			</div>
+			<div class="col-sm-12">
+			<center>
+			<p>Feel free to browse through Bathrooms By Freddy photo gallery to get the best ideas for fencing <br>solutions including garden and commercial premises.</p></center>
 			</div>
 		</div>
 	</div>
 </section>
 
 <!--End Breadcrumbs-->
+
+
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+
+
+<div id="slidess" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#slidess" data-slide-to="0" class="active"></li>
+
+  </ul>
+  
+    <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+	
+		<div class="portfolio col-md-6 col-sm-12">
+		<a class="folio-item example-image-link mysliderdata" data-id="{$row['id']}" data-toggle="modal" data-target=".bs-example-modal-lg">
+
+		<div class="album">
+		<span class="folio-date-img-count">3&nbsp;<i class="fa fa-file-image-o" aria-hidden="true"></i></span>
+		<img src="{$smarty.const.root_img}album1.png" class="example-image">
+		<div class="item-info">
+		<div class="eli-width">
+		<p class="truncate"><strong> Mr & Mrs Web</strong></p>
+		<p class="folio-date">December, 2020</p>
+
+		</div>
+		<span class="view">view</span>
+		</div>
+		</div>
+
+		</a>
+		</div> 
+		<div class="portfolio col-md-6 col-sm-12">
+		<a class="folio-item example-image-link mysliderdata" data-id="{$row['id']}" data-toggle="modal" data-target=".bs-example-modal-lg">
+
+		<div class="album">
+		<span class="folio-date-img-count">4&nbsp;<i class="fa fa-file-image-o" aria-hidden="true"></i></span>
+		<img src="{$smarty.const.root_img}album2.png" class="example-image">
+		<div class="item-info">
+		<div class="eli-width">
+		<p class="truncate"><strong> Mr & Mrs Rose</strong></p>
+		<p class="folio-date">December, 2020</p>
+
+		</div>
+		<span class="view">view</span>
+		</div>
+		</div>
+
+		</a>
+		</div> 
+		<div class="portfolio col-md-6 col-sm-12">
+		<a class="folio-item example-image-link mysliderdata" data-id="{$row['id']}" data-toggle="modal" data-target=".bs-example-modal-lg">
+
+		<div class="album">
+		<span class="folio-date-img-count">4&nbsp;<i class="fa fa-file-image-o" aria-hidden="true"></i></span>
+		<img src="{$smarty.const.root_img}album3.png" class="example-image">
+		<div class="item-info">
+		<div class="eli-width">
+		<p class="truncate"><strong>Mr beacham - complete redesign</strong></p>
+		<p class="folio-date">October, 2020</p>
+
+		</div>
+		<span class="view">view</span>
+		</div>
+		</div>
+
+		</a>
+		</div> 
+		<div class="portfolio col-md-6 col-sm-12">
+		<a class="folio-item example-image-link mysliderdata" data-id="{$row['id']}" data-toggle="modal" data-target=".bs-example-modal-lg">
+
+		<div class="album">
+		<span class="folio-date-img-count">4&nbsp;<i class="fa fa-file-image-o" aria-hidden="true"></i></span>
+		<img src="{$smarty.const.root_img}album4.png" class="example-image">
+		<div class="item-info">
+		<div class="eli-width">
+		<p class="truncate"><strong>Mr beacham - complete redesign</strong></p>
+		<p class="folio-date">July, 2020</p>
+
+		</div>
+		<span class="view">view</span>
+		</div>
+		</div>
+
+		</a>
+		</div> 
+    </div> 
+  </div>
+    <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#slidess" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#slidess" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+  </div>		
+  
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {literal}
 <style type="text/css">
 .top-nav, .top-nav-mob {
@@ -47,27 +192,28 @@
 .folio-item{
 	overflow:hidden;
 }
-.folio-item .item-info p {
 
-    color: white;
 
-}
-.folio-item .item-info {
-    background: rgba(0,0,0,.8);
-}
 .folio-date{
 	position: relative;
 	left: 0px;
 	top: 0px;
-	background-color: rgb( 247, 145, 34 );
-	color:white;
+	color:#262626;
 	z-index: 1000;
 	margin-bottom: -20px;
 	padding: 5px 15px;
 	font-style: italic;
 }
 .folio-date-img-count{
-	float:right;
+	z-index: 1;
+    position: absolute;
+    text-align: right;
+    right: 0;
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 0px 10px 0 10px;
+    opacity: 0.7;
+    color: #000;
 }
 	.modal-header .close {
 
@@ -131,12 +277,24 @@
 
 <section class="content"> 
 	<div class="container">
+	
+	
+
+	
+	
+	
 		<!-- <div style="background-color: rgb( 247, 145, 34 );height: 45px;width: 45px;border-radius: 50%;float: right;position: relative;right: 50px;top: 45px;z-index: 1000;margin-bottom: -20px"><?= $no_image; ?></div> -->
 		<!--Begin Portfoltio Item-->
-		<div class="row" id="paginate">
+		<div class="row" id="paginate" style="display:none;">
+		
+	
+			
+
+		
+		
 			{if !empty($fencing_project)}
-				{foreach from=$fencing_project item=row}	
-					<div class="col-lg-3 col-md-4 col-sm-6"> 
+				{foreach from=$fencing_project item=row}
+					<div class="col-sm-6"> 
 						{if empty($row['top_img'])}
 							<a class="folio-item example-image-link mysliderdata" data-id="{$row['id']}">
 								<img src="{$smarty.const.root_img}no_img.jpeg" class="example-image">
@@ -148,15 +306,39 @@
 								</div>
 							</a>
 						{else}
+						
+						<a class="folio-item example-image-link mysliderdata" data-id="{$row['id']}" data-toggle="modal" data-target=".bs-example-modal-lg">
+
+<div class="album">
+<span class="folio-date-img-count">3 &nbsp;<i class="fa fa-file-image-o" aria-hidden="true"></i></span>
+<img src="{$smarty.const.root_img}album1.png" class="example-image">
+<div class="item-info">
+<div class="eli-width">
+<p class="truncate"><strong> Mr & Mrs Web</strong></p>
+<p class="folio-date">December, 2020</p>
+
+</div>
+<span class="view">view</span>
+</div>
+</div>
+
+</a>
+
+						
 							<a class="folio-item example-image-link mysliderdata" data-id="{$row['id']}" data-toggle="modal" data-target=".bs-example-modal-lg">
-								<div class="folio-date">{$row['date_added']} <span class="folio-date-img-count">{$row['count_image']} photos</span></div>
-								<img src="https://admin.byfreddy.io{$row['top_img']}" class="example-image">
-								<div class="item-info">
-									<div class="eli-width">
-										<p class="truncate"><strong> {$row['title']}</strong></p>
-										<p class="truncate"><em>{$row['suburb']}</em></p>
-									</div>
-								</div>
+							
+							<div class="slider-data">
+			<span class="folio-date-img-count">{$row['count_image']} photos</span>
+			<img src="https://admin.byfreddy.io{$row['top_img']}" class="example-image">
+			<div class="item-info">
+			<div class="eli-width">
+			<p class="truncate"><strong> {$row['title']}</strong></p>
+			<p class="truncate"><em>{$row['suburb']}</em></p>
+			</div>
+			<span class=" view">view</span>
+			</div>
+		</div>
+
 							</a>
 						{/if}
 					</div>
@@ -164,11 +346,14 @@
 			{/if}
 		<!--End Portfoltio Item-->
 	</div>
-	<div class="pagination_div">
+	<div class="pagination_div" style="display:none;>
 		<input type='hidden' id='current_page' class="" />
 	    <input type='hidden' id='show_per_page' />
 	    <div id='page_navigation'></div>
 	</div>
+	
+	
+	<div class="clear"></div>
 </section>
 <!--End Content-->
 {literal}
@@ -322,6 +507,12 @@
 
 
 <!-- for pagination -->
+
+
+</div><!-- for padding -->
+
+<div class="clear"></div>
+
 {literal}
 <style type="text/css">
 
@@ -354,10 +545,11 @@
 
 			var show_per_page = 12;
 
-            var number_of_items = $('#paginate a').size();
+            var number_of_items = $('#paginate a').length;
+			
 
             var number_of_pages = Math.ceil(number_of_items / show_per_page);
-
+			
             var number_of_pages_todisplay = 5;
 
             var navigation_html = '';
@@ -370,7 +562,8 @@
 
                 current_link = current_page;
 
-            if (current_link != 1) navigation_html += "<a class='btn btn-default' href=\"javascript:first();\">« Start&nbsp;</a>&nbsp;<a class='btn btn-default' href=\"javascript:previous();\">« Prev&nbsp;</a>&nbsp;";
+            if (current_link != 1)
+				navigation_html += "<a class='btn btn-default' href=\"javascript:first();\">« Start&nbsp;</a>&nbsp;<a class='btn btn-default' href=\"javascript:previous();\">« Prev&nbsp;</a>&nbsp;";
 
             if (current_link == number_of_pages - 1) current_link = current_link - 3;
 
@@ -382,6 +575,8 @@
 
             var pages = number_of_pages_todisplay;
 
+			
+			
             while (pages != 0) {
 
                 if (number_of_pages < current_link) { break; }
@@ -406,7 +601,7 @@
 
       }
 
-      var pageSize = 12;
+      var pageSize = 4;
 
       showPage = function (page) {
 
