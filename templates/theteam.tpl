@@ -97,7 +97,17 @@
 </style>
 
 
-
+<!--Start Top Banner-->
+<section class="contact-banner ourteam">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1 class="banner_title">OUR PEOPLE</h1>				
+			</div>
+		</div>
+	</div>
+</section>
+<!--End Top Banner-->
 
 
         <!-- Modal -->
@@ -143,14 +153,14 @@
 {*?>*}
 
 
-
+<div class="padding">
 <section class="content"> 
 
   <div class="container">
 
-    <h2 class="ourmate-title"><span>Our People</span></h2>
+    <h2 class="team-title"><span>TEAM</span></h2>
 
-        <div class="row" id="paginate">
+        <div class="row" id="paginate" style="display:none">
 
       {if !empty($team)}
 
@@ -187,7 +197,7 @@
 
   </div>
 
-  <div class="pagination_div">
+  <div class="pagination_div" style="display:none">
 
     <input type='hidden' id='current_page' class="" />
 
@@ -198,6 +208,95 @@
   </div>  
 
   </div>
+
+
+
+<div class="team">
+
+	<div class="teamPage">
+	<div class="teamBox">
+		<div class="photos">
+			<img src="{$smarty.const.root_img}team-1.png" />
+		</div>
+		<div class="teamInfo">
+			<h2>Arturs</h2>
+			<p><i class="fa fa-map-marker blue" aria-hidden="true"></i> Berkshire</p>
+			<div class="teamSM">
+				<a href="#"><img src="{$smarty.const.root_img}icon-fb.png" /></a>
+				<a href="#"><img src="{$smarty.const.root_img}icon-insta.png" /></a>
+				<a href="#"><img src="{$smarty.const.root_img}icon-tw.png" /></a>
+				<a href="#"><img src="{$smarty.const.root_img}icon-envelope.png" /></a>
+			</div>
+				<div class="btn-gold">
+				<a href="#">View</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="teamBox">
+		<div class="photos">
+			<img src="{$smarty.const.root_img}team-2.png" />
+		</div>
+		<div class="teamInfo">
+			<h2>Daniel</h2>
+			<p><i class="fa fa-map-marker blue" aria-hidden="true"></i> Berkshire</p>
+			<div class="teamSM">
+				<a href="#"><img src="{$smarty.const.root_img}icon-fb.png" /></a>
+				<a href="#"><img src="{$smarty.const.root_img}icon-insta.png" /></a>
+				<a href="#"><img src="{$smarty.const.root_img}icon-tw.png" /></a>
+				<a href="#"><img src="{$smarty.const.root_img}icon-envelope.png" /></a>
+			</div>
+			<div class="btn-gold">
+				<a href="#">View</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="teamBox">
+		<div class="photos">
+			<img src="{$smarty.const.root_img}team-3.png" />
+		</div>
+		<div class="teamInfo">
+			<h2>Sam Caye</h2>
+			<p><i class="fa fa-map-marker blue" aria-hidden="true"></i> Berkshire</p>
+			<div class="teamSM">
+				<a href="#"><img src="{$smarty.const.root_img}icon-fb.png" /></a>
+				<a href="#"><img src="{$smarty.const.root_img}icon-insta.png" /></a>
+				<a href="#"><img src="{$smarty.const.root_img}icon-tw.png" /></a>
+				<a href="#"><img src="{$smarty.const.root_img}icon-envelope.png" /></a>
+			</div>
+						<div class="btn-gold">
+				<a href="#">View</a>
+			</div>
+		</div>
+	</div>	
+	<div class="teamBox">
+		<div class="photos">
+			<img src="{$smarty.const.root_img}team-4.png" />
+		</div>
+		<div class="teamInfo">
+			<h2>Jane Cooper</h2>
+			<p><i class="fa fa-map-marker blue" aria-hidden="true"></i> Berkshire</p>
+			<div class="teamSM">
+				<a href="#"><img src="{$smarty.const.root_img}icon-fb.png" /></a>
+				<a href="#"><img src="{$smarty.const.root_img}icon-insta.png" /></a>
+				<a href="#"><img src="{$smarty.const.root_img}icon-tw.png" /></a>
+				<a href="#"><img src="{$smarty.const.root_img}icon-envelope.png" /></a>
+			</div>
+					<div class="btn-gold">
+				<a href="#">View</a>
+			</div>
+		</div>
+	</div>	
+		<div class="clear"></div>
+	<div class="btn-page">
+		<img src="{$smarty.const.root_img}arrow-left1.png" class="btn-prev" />
+		<img src="{$smarty.const.root_img}arrow-right1.png" class="btn-next" />
+	</div>
+	<div class="clear"></div>
+	</div>
+</div>
+
 
 </section>
 
@@ -339,7 +438,7 @@
   </div>
 
 </div>
-
+</div>
   {/foreach}
 
 {/if}

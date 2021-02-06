@@ -9351,6 +9351,104 @@ font-size: 20px;
 }
 
 
+.team-title{
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+.team-title span{
+	text-align:center;
+	font-size:72px;
+	color:#1e1e1e;
+}
+.team{
+    background: url(../img/team-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+	margin-top: 50px;
+}
+.btn-page{
+	position: relative;
+	bottom: 410px;
+}
+.btn-prev{
+    float: left;
+    position: relative;
+    right: 50px;
+}
+.btn-next{
+    float: right;
+    position: relative;
+    left: 50px;
+}
+.teamPage{
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    position: relative;
+    top: 138px;
+}
+.teamBox{
+    width: 23%;
+    float: left;
+    text-align: center;
+    margin-left: 31px;
+}
+.teamBox:first-child{
+	margin-left:0;
+}
+.teamBox .photos{
+	margin-bottom: 20px;
+	width:100%
+}
+.teamBox .photos img{
+	margin-bottom: 10px;
+	width:100%
+}
+.teamInfo{
+    width: 50%;
+    margin: auto;
+}
+.teamInfo h2{
+	color: #1e1e1e !important;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.teamInfo p{
+	color: #1e1e1e !important;
+	font-size: 18px;
+}
+.teamInfo p i{
+	color: #007eff;
+}
+.teamSM{}
+.teamSM img{
+	width: 26px;
+    height: auto;	
+}
+.teamSM a{}
+.teamInfo .btn-gold{
+	margin:20px 0;
+}
+.btn-gold a{
+    background: rgb(247, 145, 34);
+    height: auto;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;	
+}
+
+
+
+
+
+
+
+
 
 
 
