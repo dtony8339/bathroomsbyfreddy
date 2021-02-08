@@ -7990,9 +7990,14 @@ footer.stackfooter img {
 /****** Style Star Rating Widget *****/
 
 .rating {
-	border: none;
-	width: 140px;
+    border: none;
+    width: 110px;
+    margin: 0;
+    font-size: 10px;
+    text-align: left;
 }
+
+
 .rating > input { display: none; }
 .rating > label:before {
   margin: 5px;
@@ -8030,16 +8035,27 @@ footer.stackfooter img {
     font-size: 25px;
     line-height: normal;
     font-weight: bold;
+	color: #262626;
 }
 .client-review {
     background: #fff;
-    padding: 30px 20px 40px;
+    padding: 30px 20px 25px;
     border-radius: 10px;
     border: 1px solid #ebebeb;
-    max-width: 350px;
+    max-width: 570px;
     width: 100%;
     margin: 10px auto;
     min-height: 255px;
+}
+.ppics{
+	text-align:center;
+}
+#more{
+	cursor: pointer;
+    color: #f79122;
+    border-radius: 5px;
+    padding: 10px;
+    float: right;
 }
 .meta {
     text-align: center;
@@ -9216,7 +9232,22 @@ background-color: linear-gradient(to bottom, rgba(231,232,234,1) 1%,rgba(251,251
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e8ea', endColorstr='#e7e8ea',GradientType=0 ); /* IE6-9 */
     background-repeat: no-repeat;
 }
-
+.review-banner {
+	background-size: cover !important;
+	background: url(../img/contact-banner.jpg);
+    background-position: center center;
+    max-height: 346px !important;
+    height: 100%;
+    padding: 0;
+	
+	 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e7e8ea+1,fbfbfb+50,e7e8ea+100 */
+background-color: rgb(231,232,234); /* Old browsers */
+background-color: -moz-linear-gradient(top, rgba(231,232,234,1) 1%, rgba(251,251,251,1) 50%, rgba(231,232,234,1) 100%); /* FF3.6-15 */
+background-color: -webkit-linear-gradient(top, rgba(231,232,234,1) 1%,rgba(251,251,251,1) 50%,rgba(231,232,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background-color: linear-gradient(to bottom, rgba(231,232,234,1) 1%,rgba(251,251,251,1) 50%,rgba(231,232,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e8ea', endColorstr='#e7e8ea',GradientType=0 ); /* IE6-9 */
+    background-repeat: no-repeat;
+}
 
 .contact-banner h1.banner_title {
     font-size: 100px;
@@ -9443,15 +9474,35 @@ font-size: 20px;
 }
 
 
+.reviewsPage{
+	
+}
+
+.reviewsPage h1.banner_title{
+    margin-top: 40px !important;
+}
+.reviewsPage .rating{
+	
+}
+
+.reviewsPage p{
+	    font-size: 30px;
+}
 
 
 
+.btn-default {
+    background: none !important;
+    color: #1e1e1e;
+    border: none;
+}
 
-
-
-
-
-
+.btn-primary {
+    color: #1e1e1e;
+    background-color: #fff;
+    border-color: #f79122;
+    border-radius: 50%;
+}
 
 /* ========================================== SLIDER ======================================= */
 .sBox{

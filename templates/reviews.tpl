@@ -20,14 +20,9 @@
 {/literal}
 {literal}
     <style type=text/css>
-    .main-header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        z-index: 22222;
-    }
+	body{
+		padding-top:0!important;
+	}
     .top-nav {
         transition: height ease-in-out .3s;
     }
@@ -44,20 +39,15 @@
     }
     </style>
 {/literal}
-<section class="top-reviews">
-    <div class="container">
-        <a href="#">Site Appointments</a> <span class="seperator">|</span> <a href="#">Jobs</a> <span class="seperator">|</span> <a href="#">Start</a>
-    </div>
-</section>
-<section class="review-banner">
 
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-sm-12">
-                <h2>BY FREDDY REVIEWS</h2>
+<!--Start Top Banner-->
+<section class="review-banner ourteam">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 reviewsPage">
+				<h1 class="banner_title">BY FREDDY REVIEWS</h1>		
                 <fieldset class="rating">
+
                     <input type="radio" id="star5" name="rating10" value="5" {if $reviews_average['average_rating'] ==5 } checked="checked" {/if} /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
                     
                     <input type="radio" id="star4half" name="rating9" value="4 and a half" {if $reviews_average['average_rating'] >=4.5 } checked="checked" {/if}  /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
@@ -72,15 +62,23 @@
                     <input type="radio" id="star1" name="rating"2 value="1" {if $reviews_average['average_rating'] >=1 } checked="checked" {/if}  /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
                     <input type="radio" id="starhalf" name="rating1" value="half" {if $reviews_average['average_rating'] >=1 } checked="checked" {/if}  /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
                 </fieldset>
+				<center>
                 <p>{floatval($reviews_average['average_rating'])} Rating   |   {1000+$reviews_gt_five_counter} Reviews</p>
+				</center>
                 <!-- <p>4.53 Rating   |   2,166 Reviews</p> -->
 
-            </div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--End Top Banner-->
 
-        </div>
 
+
+<section class="top-reviews" style="display:none;">
+    <div class="container">
+        <a href="#">Site Appointments</a> <span class="seperator">|</span> <a href="#">Jobs</a> <span class="seperator">|</span> <a href="#">Start</a>
     </div>
-
 </section>
 
 <section class="content"> 
@@ -88,11 +86,51 @@
 
     {if !empty($reviews)}
     {$i = 1} 
+
     {foreach from=$reviews item=row}
-      
-        <div class="col-md-4">
+
+
+
+
+        <div class="col-md-6">
             <div class="client-review">
-                <fieldset class="rating">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="ppics">
+						{if $row['id'] == 194 }
+							<img src="{$smarty.const.root_img}r1.png">
+						{/if}
+						{if $row['id'] == 193 }
+							<img src="{$smarty.const.root_img}r2.png">
+						{/if}
+						{if $row['id'] == 191 }
+							<img src="{$smarty.const.root_img}r3.png">
+						{/if}
+						{if $row['id'] == 181 }
+							<img src="{$smarty.const.root_img}r4.png">
+						{/if}
+						{if $row['id'] == 188 }
+							<img src="{$smarty.const.root_img}r5.png">
+						{/if}
+						{if $row['id'] == 186 }
+							<img src="{$smarty.const.root_img}r6.png">
+						{/if}
+						{if $row['id'] == 173 }
+							<img src="{$smarty.const.root_img}r7.png">
+						{/if}
+						{if $row['id'] == 171 }
+							<img src="{$smarty.const.root_img}r8.png">
+						{/if}
+						
+						
+						
+						</div>
+					</div>
+					<div class="col-sm-8">
+					<div class="client-comments"><p>{$row['comments']}</p></div>
+					<h3 class="client-name">{$row['name']}</h3>
+					<fieldset class="rating">
+
                     <input type="radio" id="star5" name="rating5{$i}" value="5" {if $row['stars']==5 } checked="checked" {/if} /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
                     
                     <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
@@ -106,19 +144,24 @@
                     <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
                     <input type="radio" id="star1" name="rating1{$i}" value="1" {if $row['stars']==1 } checked="checked" {/if}  /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
                     <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-                </fieldset>
-                <h3 class="client-name">{$row['name']}</h3>
-                <div class="client-comments"><p>{$row['comments']}</p></div>
-                
-                <div class="row meta">
+                </fieldset>               
+				<div class="row meta">
+			<span id="more">Read More  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+				</div>					  
+                <div class="row meta" style="display:none;">
                     <div class="col-md-6">
-                        <!-- <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-link" aria-hidden="true"></i>
-    </a> <a href="#"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a> -->
+              <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-link" aria-hidden="true"></i>
+    </a> <a href="#"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a>
                     </div>
                     <div class="col-md-6">
                         {$row['added_at']|date_format:"%b %e, %Y"}
                     </div>
                 </div>
+					</div>
+				</div>
+				
+				
+                
             </div>
         </div>
         {$i = $i+1}
@@ -714,17 +757,21 @@
 </script>
 <script type="text/javascript">
 $(document).ready(function() {
+
   var maxLength = 100;
   $(".client-comments p").each(function() {
     var myStr = $(this).text();
     if ($.trim(myStr).length > maxLength) {
+	
     var buttonMore = '<span class="dots">..</span><a href="javascript:void(0);" class="read-more">Read More</a>';
       var newStr = myStr.substring(0, maxLength);
       var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
       $(this).empty().html(newStr);
       $(this).append('<span class="more-text">' + removedStr + '</span>');
       $(this).append(buttonMore);
+		
     }
+	
   });
     $(document).on("click", ".read-more", function() {
         $(this).parents("div.col-md-4").addClass("col-md-8");
