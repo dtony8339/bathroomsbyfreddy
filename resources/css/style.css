@@ -5844,27 +5844,40 @@ span.select2-selection__arrow {
 }
 
 .grade-text h3 {
-
-    margin: 0;
-
+    margin: 25px 0;
     text-align: center;
-
-    color: white;
-
+    color: #2a2828;
     text-transform: uppercase;
-
-	font-weight:bold;
+    font-weight: bold;
+    font-size: 48px;
 
 }
 
-.grade-text {
+.grade-text h4 {
+	text-align:center;
+	color:#f79122;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: none;
+}
 
-    background: #f69022;
+.grade-text {
+	height: 350px;
+    background: #fff;
 
     border-radius: 20px;
 
     padding: 15px;
+	-webkit-box-shadow: 2px 6px 15px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 6px 15px -7px rgba(0,0,0,0.75);
+	box-shadow: 2px 6px 15px -7px rgba(0,0,0,0.75);
+}
 
+.grd{
+    padding: 15px;
+	-webkit-box-shadow: 2px 6px 15px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 6px 15px -7px rgba(0,0,0,0.75);
+	box-shadow: 2px 6px 15px -7px rgba(0,0,0,0.75);	
 }
 
 .grade-text ul {
@@ -5879,7 +5892,7 @@ span.select2-selection__arrow {
 
     background: white;
 
-    margin: 5px auto;
+	margin: 15px auto;
 
     padding: 5px 10px;
 
@@ -5903,15 +5916,16 @@ span.select2-selection__arrow {
 
     max-width: 350px;
 
-    margin: 20px auto;
-
+	margin: 20px auto 0;
+    position: relative;
+    top: -220px;
 }
 
 h2.grade-title {
 
-    font-size: 35px;
+    font-size: 48px;
 
-    color: #000;
+    color: #2a2828 !important;
 
     margin-top: 25px;
 
@@ -5919,13 +5933,25 @@ h2.grade-title {
 
 }
 
+.grd{
+	margin-bottom:30px;
+	background:#fff;
+}
 
 
 .price-guide{
 
-	padding: 80px 0;
+	padding: 0;
 
+	background-image: url(../img/price-bg.jpg);
+    background-size: cover;
+    background-position: top center;
 }
+
+.prgd{	
+    position: RELATIVE;
+    top: -150px;
+	}
 
 #succ, #loadingmsg{
 
@@ -6072,8 +6098,8 @@ ul.dropdown-content li {
 }
 
 #price-banner {
-
-    background: url(https://professionaldriveways.com.au/resources/img/price-bg.jpg);
+	
+	background-image: url(../img/pg-bg.png);
 
     background-size: cover;
 
@@ -6081,36 +6107,27 @@ ul.dropdown-content li {
 
     padding: 100px 0 0;
 
-    border-bottom: 20px solid #f69022;
+    border-bottom: 220px solid #f69022;
 
 }
 
 #price-banner p {
-
-    font-size: 18px;
-
+	font-size: 20px;
     font-weight: bold;
-
-    color: #6d6e71;
-
     letter-spacing: 2px;
-
     margin-bottom: 40px;
-
+    color: #fff;
+    text-align: center;
 }
 
 #price-banner h1 {
-
-    color: #6d6e71;
-
+    color: #2a2828 !important;
     font-weight: bold;
-
-    font-size: 35px;
-
+    font-size: 48px;
     margin-top: 40px;
-
+    text-align: center;
     letter-spacing: 2px;
-
+    line-height: normal;
 }
 
 
@@ -9503,6 +9520,10 @@ font-size: 20px;
     border-color: #f79122;
     border-radius: 50%;
 }
+
+
+
+
 
 /* ========================================== SLIDER ======================================= */
 .sBox{
