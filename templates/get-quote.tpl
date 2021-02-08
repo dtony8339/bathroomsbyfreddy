@@ -23,6 +23,7 @@ body{
 
     letter-spacing: 2px !important;
 	-webkit-appearance: none;
+	background: #ededed;
 
 }
 select::-ms-expand { display: block; }
@@ -39,35 +40,32 @@ select::-ms-expand { display: block; }
 
 
 <script src="{$smarty.const.siteurl}resources/js/postcodes.min.js"></script>
-<div class="quote-header" id="appointment1">
+
+
+<!--Start Top Banner-->
+<section class="contact-banner ourteam">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1 class="banner_title">GET QUOTE</h1>				
+			</div>
+		</div>
+	</div>
+</section>
+<!--End Top Banner-->
+
+
+
+
+
+
+<div class="quote-header">
             <div class="container">
                 <div class="col-md-12">
+				<center>
                     <h2>Making a Free Appointment is Easy</h2>
                     <p>(Obligation-Free)</p>
-                </div>
-                <div class="col-md-3 col-xs-6 col-xxs-12">
-                    <div class="quote-step">
-                        <div class="number"><span>Step</span> 01</div>
-                        <p>Fill In Our Online Form</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-6 col-xxs-12">
-                    <div class="quote-step">
-                        <div class="number"><span>Step</span> 02</div>
-                        <p>You Will Receive <strong>SMS</strong> And <strong>EMAIL</strong> With A Link</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-6 col-xxs-12">
-                    <div class="quote-step">
-                        <div class="number"><span>Step</span> 03</div>
-                        <p>Select The <strong>Time</strong> And <strong>Day</strong></p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-6 col-xxs-12">
-                    <div class="quote-step">
-                        <div class="number"><span>Step</span> 04</div>
-                        <p>Your All Done - <strong>Appointment Completed</strong></p>
-                    </div>
+					</center>
                 </div>
             </div>
 </div>
@@ -78,7 +76,28 @@ select::-ms-expand { display: block; }
 
 <div class="row">
 
-        <div id="succ" class="alert alert-success" style="display:none;">
+<div class="col-lg-3">
+	<div class="quote-header" id="appointment1">
+		<div class="quote-step">
+			<div class="number gold">Step 01</div>
+			<p>Fill In Our Online <span class="gold">Form</span></p>
+		</div>
+		<div class="quote-step">
+			<div class="number gold">Step 02</div>
+			<p>You Will Receive <strong>SMS</strong> And <strong>EMAIL</strong> With A Link</p>
+		</div>
+		<div class="quote-step">
+			<div class="number gold">Step 03</div>
+			<p>Select The <strong>Time</strong> And <strong>Day</strong></p>
+		</div>
+		<div class="quote-step">
+			<div class="number gold">Step 04</div>
+			<p>Your All Done <strong>Appointment Completed</strong></p>
+		</div>
+	</div>
+	
+	
+	 <div id="succ" class="alert alert-success" style="display:none;">
 
         <div class="row">
 
@@ -149,30 +168,16 @@ select::-ms-expand { display: block; }
             </div>
 
            
-
-        </div>
-
             <div style="float: right;display:none; margin-right: 50%;" class="loader"></div>
 
-            <br style"clear:both;">
-
-      </div>
-
-   </div>
+            <br style="clear:both;">
+        </div>
+</div>
 
 
-
-
-
-
-
-
-
-<section class="content">
-
-	<div class="container">
-
-    <div class="row">
+<div class="col-lg-9">
+ <div class="row">
+ <div class="appoints">
 
         
 
@@ -191,12 +196,14 @@ select::-ms-expand { display: block; }
         </div>
 
         <div class="col-md-12">
-
+			
         <div class="tab-content" id="quotepage">
 
 
 
   <div id="home" class="tab-pane fade in active">
+<h2 class="gold">Individual</h2>
+
 
   	<form action="#" method="POST" id="pipefrom" class="Individual-form">
 
@@ -204,25 +211,26 @@ select::-ms-expand { display: block; }
     	<div class="row">
 
         	<div class="col-md-6">
-
-            	 <input type="text" class="form-control" id="name" name="name" placeholder="First Name" required >
+				<label>First Name *</label>
+            	 <input type="text" class="form-control" id="name" name="name" placeholder="" required >
 
             </div>
 
         	<div class="col-md-6">
-
-            	 <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" required >
-
-            </div>
-
-        	<div class="col-md-4">
-
-            	 <input type="email" class="form-control" id="email" name="email" placeholder="Email" required >
+				<label>Last Name *</label>
+            	 <input type="text" class="form-control" id="lname" name="lname" placeholder="" required >
 
             </div>
 
         	<div class="col-md-4">
+				<label>Email *</label>
+            	 <input type="email" class="form-control" id="email" name="email" placeholder="" required >
 
+            </div>
+
+        	<div class="col-md-4">
+				<label>Please select Country</label>
+				
             	 {$printed = array()}
 
 				<select type="text" style="width:100%" id="code" name="code" class="form-control form-lg">
@@ -248,8 +256,8 @@ select::-ms-expand { display: block; }
             </div>
 
         	<div class="col-md-4">
-
-            	<input type="number" class="form-control" id="mobile" name="mobile" placeholder="Mobile">
+				<label>Mobile</label>
+            	<input type="number" class="form-control" id="mobile" name="mobile" placeholder="">
 
             </div>
 
@@ -341,7 +349,7 @@ select::-ms-expand { display: block; }
 
         	<div class="col-md-12">
 
-		    	<h4>what are you interested in?</h4>
+		    	<h4 class="interested">what are you interested in?</h4>
 
                 <div class="row">
 
@@ -403,28 +411,27 @@ select::-ms-expand { display: block; }
 <div id="menu1" class="tab-pane fade">
 
     <form action="#" method="POST" id="pipefrom2" class="Business-form">
-
-    	<div class="grey-title">BUSINESS</div>
-
-            
+<h2 class="gold">BUSINESS</h2>
+<div class="grey-title">BUSINESS</div>
+    	         
 
       	
 
       	<div class="col-md-4">
-
-        	<input type="text" class="form-control" id="cname" name="cname" placeholder="Company Name" required>
-
-        </div>
-
-      	<div class="col-md-4">
-
-        	<input type="number" class="form-control" id="cphone" name="cphone" placeholder="Phone" required>
+			<label>Company Name *</label>
+        	<input type="text" class="form-control" id="cname" name="cname" placeholder="" required>
 
         </div>
 
       	<div class="col-md-4">
+			<label>Phone *</label>
+        	<input type="number" class="form-control" id="cphone" name="cphone" placeholder="" required>
 
-		  <input type="email" class="form-control" id="cemail" name="cemail" placeholder="Email" required>
+        </div>
+
+      	<div class="col-md-4">
+<label>Email *</label>
+		  <input type="email" class="form-control" id="cemail" name="cemail" placeholder="" required>
 
         </div>
 
@@ -473,19 +480,19 @@ select::-ms-expand { display: block; }
 		<div class="grey-title">Contact Person</div>
 
       	<div class="col-md-4">
-
+		<label>First Name *</label>
 		  <input type="text" class="form-control" id="pname" name="pname" placeholder="First Name" required>
 
 		 </div>
 
       	<div class="col-md-4">
-
-		  <input type="text" class="form-control" id="plname" name="plname" placeholder="Last Name"required>
+		<label>Last Name *</label>
+		  <input type="text" class="form-control" id="plname" name="plname" placeholder=""required>
 
 		</div>
 
       	<div class="col-md-4">
-
+		<label>Email *</label>
 		  <input type="email" class="form-control" id="pemail" name="pemail" placeholder="Email" required>
 
 		</div>
@@ -652,7 +659,31 @@ select::-ms-expand { display: block; }
 
 		
 
-	</div>
+	</div><!-- appoints -->
+
+       
+        </div> 
+        </div>
+
+
+
+      </div>
+
+   </div>
+
+
+
+
+
+
+
+
+
+<section class="content">
+
+	<div class="container">
+
+   
 
 		
 

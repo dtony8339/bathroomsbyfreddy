@@ -5578,22 +5578,34 @@ h1.ourmate-title span {
 
 .grey-title {
 
-    background: #555555;
-
+background: #2b2b2b;
     text-align: center;
-
     color: white;
-
     font-size: 30px;
-
     font-weight: bold;
-
     padding: 10px 0;
-
-	margin: 20px 0;
+    margin: 20px 0;
+    width: 80%;
+    -webkit-border-top-left-radius: 100px;
+    -webkit-border-bottom-right-radius: 100px;
+    -moz-border-radius-topleft: 100px;
+    -moz-border-radius-bottomright: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
 
 }
+.interested{
+    margin: 20px 0;
+    color: #2b2b2b;
+    font-size: 30px;
+    padding: 20px;
+    background: #fbd0a0;
+    font-weight: 400 !important;
 
+}
+.Individual-form .col-md-6{
+	margin-bottom:20px;
+}
 .appointment-col .count {
 
     background: #f79221;
@@ -5640,24 +5652,30 @@ h1.ourmate-title span {
 ul.quote-tab {
     display: table;
     padding: 0;
-	margin: 0;
+    margin: 0;
+    float: right;
+	background: #ededed;
 }
 ul.quote-tab li {
     display: table-cell;
-	font-size: 25px;
-	text-transform: uppercase;
-	padding: 10px 15px;
-	font-weight: bold;
-	background: #f79122;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-weight: bold;
+    background: #f79122;
+    border-radius: 10px;
+    text-transform: none;
 }
 ul.quote-tab li.active {
-    background: white;
+	color:#2b2b2b;
+	background: #ededed;
 }
 ul.quote-tab li.active a {
-    color: #f79221;
+	color:#2b2b2b;
 }
 ul.quote-tab li a {
     color: #fff;
+    text-transform: none;
 }
 
 
@@ -7581,14 +7599,17 @@ footer.stackfooter img {
 .quote-step {
     letter-spacing: 2px;
     max-width: 300px;
-    margin: 20px auto;
+    margin: auto;
     float: none;
-    background: rgb(255, 182, 103);
-    padding: 5px;
+    padding-left: 32px;
+    padding-bottom: 140px;
     border-radius: 10px;
     height: auto;
     display: inline-block;
     width: 100%;
+    background-image: url(../img/markers.png);
+    background-position: left top;
+    background-repeat: no-repeat;
 }
 .quote-header {
     background: url('https://paintingbyfreddy.co.uk/resources/img/what-we-do.jpg');
@@ -7608,8 +7629,10 @@ footer.stackfooter img {
 	margin:0;
 }
 .quote-header h2 {
-    font-weight: bold;
     margin: 20px 0 0;
+    font-size: 72px;
+    line-height: normal;
+    font-weight: 400;
 }
 .quote-header p {
     margin: 0;
@@ -7621,18 +7644,12 @@ footer.stackfooter img {
     margin: 40px auto;
 }
 .quote-step .number {
-    width: 25%;
     padding: 0 10px 15px;
-    background: white;
-    font-size: 55px;
-    color: #2a2828;
+    font-size: 24px;
+    color: #f28e07;
     font-family: 'BebasNeue-Regular';
-    line-height: 55px;
-    text-align: center;
-    float: left;
-    border-radius: 10px;
+    line-height: normal;
     letter-spacing: 0;
-    margin-right: 10px;
 }
 .quote-step .number span {
 
@@ -7655,8 +7672,12 @@ footer.stackfooter img {
     margin: 15px 0;
 }
 .quote-step p {
-    min-height: 90px;
-	margin-top: 10%;
+	font-weight: bold;
+    color: #2b2b2b;
+    font-size: 34px;
+}
+.quote-step p strong{
+    color: #f79122;
 }
 .quote-step::before {
 	content: '';
@@ -7676,6 +7697,15 @@ footer.stackfooter img {
     margin-bottom: 50px;
 
 }
+
+.appoints{
+	display: block;
+    background: #fff;
+    overflow: hidden;
+    padding: 20px 0;	
+}
+
+
 @media(max-width:991px){
 	.quote-step{
 		max-width: none;
@@ -9730,7 +9760,7 @@ height: 100%;
 	.work h2{
 		font-size:25px;
 	}
-	.work p {
+	.work p { 
 		font-size: 20px;
 	}
 	.padding{
