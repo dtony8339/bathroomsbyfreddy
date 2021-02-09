@@ -27,17 +27,20 @@
 }
 {/literal}
 </style>
+
 <!--Start Top Banner-->
-<section class="top-banner ourteam">
+<section class="contact-banner ourteam">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<!--<div class="call-us">{$contact_number}</div>-->
+				<h1 class="banner_title">SERVICES</h1>		
+<!--<div class="call-us">{$contact_number}</div>-->				
 			</div>
 		</div>
 	</div>
 </section>
 <!--End Top Banner-->
+
 
 				<!-- Modal -->
 
@@ -61,12 +64,18 @@
 
 <section class="content"> 
 	<div class="container">
+		<center>
 		<h2 class="ourmate-title"><span>Bathroom Renovations and Extensions</span></h2>
         <p>Let’s face it: bathroom designs get dated and no longer suit your tastes.  A good time to renovate is when you notice your rooms looking a bit shabby, and the wear and tear has been building up. You may simply want to give walls or furniture a fresh coat of paint, perhaps in a new colour scheme. Perhaps you want to remove or add a bathtub, replace an old vanity unit or instal a bidet. Or you may have a complete design makeover planned, involving a whole new look, textures, colours styles and fixtures. Alternately, you may be wanting to increase the size or change the access point of your room. This may be because your family is growing, or other adjoining parts of your house are being altered. If you are renovating a business it may be because you have more employees. Or perhaps your old bathrooms are no longer compliant with modern regulations.</p>
 
         <h3>What we do:</h3>
 		<p>We have a complete building team who can tackle not just what you have planned but any problems that might be discovered.</p>
-
+	</center>
+	</div>
+	
+	<div class="repair">
+		<div class="container">
+		<div class="col-sm-6">
 		<h4>Renovations:</h4> 
         <ul>
         	<li>knock down walls and ceilings that need to be moved or replaced</li>
@@ -78,7 +87,22 @@
         	<li>install new shower cubicles, alcoves and glass work</li>
         	<li>repair any elements of the bathroom that are going to be kept in the renovation</li>
 		</ul>
-        
+           </div>
+		<div class="col-sm-6">
+			<div class="repair-img">
+				<img src="{$smarty.const.root_img}renovations-img.jpg" />
+			</div>
+		</div>
+		</div>
+      </div> 
+			<div class="maintenance1">
+				<div class="container">
+		<div class="col-sm-6">
+			<div class="maintenance-img">
+				<img src="{$smarty.const.root_img}extensions-img.jpg" />
+			</div>
+		</div>
+			<div class="col-sm-6">
         <h4>Extensions:</h4> 
         <ul>
         	<li>we work with your architect or building engineer to design and build a bathroom that is an add-on or extension of your building</li>
@@ -89,8 +113,13 @@
         	<li>our designer can give you ideas for interior design, the styles and materials of fixtures, etc.</li>
         	<li>do all the masonry, electrical, plumbing, roofing, carpentry, painting, tiling and fitout that is required by the new bathroom</li>
 		</ul>
+			  </div>
+		
+        </div>
+        </div>
 
-	</div>
+
+
 </section>
 <!--End Content-->
 

@@ -28,11 +28,12 @@
 {/literal}
 </style>
 <!--Start Top Banner-->
-<section class="top-banner ourteam">
+<section class="contact-banner ourteam">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<!--<div class="call-us">{$contact_number}</div>-->
+				<h1 class="banner_title">SERVICES</h1>		
+<!--<div class="call-us">{$contact_number}</div>-->				
 			</div>
 		</div>
 	</div>
@@ -61,10 +62,15 @@
 
 <section class="content"> 
 	<div class="container">
+	<center>
 		<h2 class="ourmate-title"><span>New bathrooms and ensuites</span></h2>
         <p>When you build new, you have a lot of options. For example you can choose the size, shape and location of the bathroom relative to the rest of the building. You’d do this after consulting with our expert team who can help you take into account various important factors. Some of these are the regulations that apply to plumbing, electrical and building. Also you’ll most likely need to get the approval of your local council before building. Are you adding a bathroom or ensuite to an existing building? Or are you at the beginning of designing a whole new house or commercial premises? Whatever level your project is at, we can help you.</p>
-        
-        <h3>What we do:</h3>
+        </center>
+	</div>
+	<div class="repair">
+		<div class="container">
+		<div class="col-sm-6">
+        <h4>What we do:</h4>
         <ul>
         	<li>ByFreddy's extended team gives pre-building advice on location and design</li>
         	<li>we do indoor residential and commercial bathrooms and ensuites for: houses, flats, hotels, shopping centres, offices, schools, clinics, public buildings, farms, etc</li>
@@ -72,8 +78,17 @@
         	<li>we can even do creative outdoor bathrooms for your home</li>
         	<li>our tradespeople do every trade required for bathrooms: building, masonry and bricklaying, plumbing, electrical, walls, roofing, tiling, painting, interior fitouts, fixtures, accessories and interior design</li>
 		</ul>
-        
+           </div>
+		<div class="col-sm-6">
+			<div class="repair-img">
+				<img src="{$smarty.const.root_img}whatwedo-img.jpg" />
+			</div>
+		</div>
+		</div>
+      </div> 
+	  <center>
         <p>Contact our team if you are thinking of a new bathroom, ensuite, or want to create something out of the ordinary!</p>
+		</center>
 	</div>
 </section>
 <!--End Content-->
