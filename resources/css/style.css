@@ -8704,6 +8704,45 @@ a.more {
   list-style-image: url(../img/planning.png);
 }
 */
+.maintenance1{
+	background-image: url(../img/repair-bg.jpg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+	background-position-x: 100%;
+    padding: 100px 0;
+    margin: 50px 0;
+	background-size: contain;
+}
+.repair{
+	background-image: url(../img/repair-bg.jpg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position-x: 0%;
+    padding: 100px 0;
+    margin: 50px 0;
+	background-size: contain;
+	
+}
+.maintenance-img{
+	text-align:right;
+}
+
+.maintenance1 h4,
+.repair h4{
+	color: #f79122;
+	font-size: 48px;
+	line-height: normal;
+}
+.maintenance1 ul,
+.repair ul{
+    padding-left: 22px; 
+}.
+maintenance1 ul li,
+.repair ul li{
+font-size: 20px;
+    line-height: normal;
+}
+
 .works ul li a#repair{
     background-image: url(../img/tools.png);
 	background-position: 0%;

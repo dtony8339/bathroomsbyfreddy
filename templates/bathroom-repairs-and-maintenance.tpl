@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{$smarty.const.root_css}lightbox.min.css">
+ <link rel="stylesheet" href="{$smarty.const.root_css}lightbox.min.css">
 <link rel="stylesheet" href="{$smarty.const.root_css}font-awesome.min.css">
 <link rel="stylesheet" href="{$smarty.const.root_css}prettyPhoto.css">
 <link rel="stylesheet" href="{$smarty.const.root_css}swiper.min.css">
@@ -27,7 +27,24 @@
 }
 {/literal}
 </style>
+
 <!--Start Top Banner-->
+<section class="contact-banner ourteam">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1 class="banner_title">SERVICES</h1>				
+			</div>
+		</div>
+	</div>
+</section>
+<!--End Top Banner-->
+
+
+
+
+<!--
+<Start Top Banner
 <section class="top-banner ourteam">
 	<div class="container">
 		<div class="row">
@@ -37,7 +54,8 @@
 		</div>
 	</div>
 </section>
-<!--End Top Banner-->
+<!--
+End Top Banner -->
 
 				<!-- Modal -->
 
@@ -61,12 +79,17 @@
 
 <section class="content"> 
 	<div class="container">
+	<center>
 		<h2 class="ourmate-title"><span>Bathroom Repairs and Maintenance</span></h2>
         <p>Occasionally you'll need bathroom repairs. This is because wet areas put materials under quite a bit of continual stress from heat and moisture. Paint peels, timber degrades, stone and enamel get chipped, tiles come off, shower screens get broken, etc. Also walls can move in extreme weather and make cracks open up. Toilets can cause leaks or develop cracks. There is also the possibility of damage due to mould growth and pests like termites and ants. Whether you need something repaired, or you want a regular maintenance schedule to stop bathrooms from deteriorating in the first place, call us and ask about how we can serve you.</p>
 
         <h3>What we do:</h3>
 		<p>We do all residential, commercial, industrial and rural repair and maintenance jobs on bathrooms, ensuites and toilets.</p>
-
+	</center>
+	</div>
+	<div class="repair">
+		<div class="container">
+		<div class="col-sm-6">
 		<h4>Repairs:</h4> 
         <ul>
         	<li>we replace worn and damaged tiles, stonework and fixtures, taps, yellowed or cracked toilets, damp timber work, etc</li>
@@ -78,8 +101,27 @@
         	<li>treat or replace moulded areas</li>
         	<li>our pest controller can remove termites</li>
 		</ul>
-        
-        <h4>Maintenance:</h4> 
+		
+		
+        </div>
+		<div class="col-sm-6">
+			<div class="repair-img">
+				<img src="{$smarty.const.root_img}repair-img.jpg" />
+			</div>
+		</div>
+		</div>
+      </div>
+		
+		<div class="maintenance1">
+				<div class="container">
+		<div class="col-sm-6">
+			<div class="maintenance-img">
+				<img src="{$smarty.const.root_img}maintenance-img.png" />
+			</div>
+		</div>
+			<div class="col-sm-6">
+			
+			        <h4>Maintenance:</h4> 
         <ul>
         	<li>regular re-sealing of stone tiles in the shower and on the bathroom floor and walls</li>
         	<li>cleaning of tile grout and top up of gaps</li>
@@ -89,11 +131,16 @@
         	<li>removal of water scale buildup on pipes and surfaces</li>
         	<li>testing and cleaning out of ceiling fans and fan housings</li>
 		</ul>
-        
-        <p><strong>Just repairs?</strong></p>
-        <p>Or is it time to completely renovate your bathroom? Either way, pick up the phone and talk to us today on 02-9098-6910.</p>
 
-	</div>
+			  </div>
+		
+        </div>
+        </div>
+		<center>
+        <p><strong class="gold">Just repairs?</strong></p>
+        <p>Or is it time to completely renovate your bathroom? Either way, pick up the phone and talk to us today on 02-9098-6910.</p>
+		</center>
+	<!--</div>-->
 </section>
 <!--End Content-->
 
