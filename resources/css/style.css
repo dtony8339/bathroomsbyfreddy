@@ -8761,7 +8761,7 @@ font-size: 20px;
 .works ul li a#planning{
     background-image: url(../img/planning.png);
 	background-position: 0%;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; 
 }
 .works ul li a.active,
 .works ul li a#repair:hover{
@@ -9592,7 +9592,49 @@ font-size: 20px;
 
 
 
+.prod{
+    margin-bottom: 30px;
+    display: block;
+    overflow: hidden;
+}
+.prodInfo{
+	background: url(../img/prod-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 18px;
+    display: block;
+    overflow: auto;
+    line-height: normal;
+    height: 450px;
+    padding: 0 50px;
+}
+.prodInfo h3{
+	font-size:36px;	
+	line-height:normal;
+}
 
+.prod-img1,
+.prod-img3{
+    float: left;
+}
+.prod-img2,
+.prod-img4{
+    float: right;
+}
+
+#less1, 
+#less2, 
+#less3, 
+#less4, 
+#text1, 
+#text2, 
+#text3, 
+#text4{
+	text-align: right;
+    display: block;
+    font-weight: bold;
+    color: #626262;
+}
 
 /* ========================================== SLIDER ======================================= */
 .sBox{

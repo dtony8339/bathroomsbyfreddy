@@ -28,16 +28,17 @@
 {/literal}
 </style>
 <!--Start Top Banner-->
-<section class="top-banner ourteam">
+<section class="contact-banner ourteam">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<!--<div class="call-us">{$contact_number}</div>-->
+				<h1 class="banner_title">PRODUCTS</h1>		
+<!--<div class="call-us">{$contact_number}</div>-->				
 			</div>
 		</div>
 	</div>
 </section>
-<!--End Top Banner-->
+<!--End Top Banner-->   
 
 				<!-- Modal -->
 
@@ -61,20 +62,94 @@
 
 <section class="content"> 
 	<div class="container">
+	<center>
 		<h2 class="ourmate-title"><span>Showers, Glass and Accessories</span></h2>
         <p>These days showers go far beyond the old white tiled cubicle and curtain. They can even go beyond glass sliding or swinging doors. Of course you can still go for those options, for budget or simplicity reasons. Or even just personal preference. However take a look at some of the possibilities below to consider before your next build, renovation or extension.</p>
+	</center>
+		<br>
+		<div class="clear"></div>
+		<br>
+		
+		<div class="col-md-12">
+		<div class="prod-img1">
+			<img src="{$smarty.const.root_img}prod-img5.jpg" />
+		</div>
+		<div class="prodInfo">	
         
         <h3>Shower cubicles</h3>
-		<p>Your shower can be just a shower rose above the bath, or the usual cubicle made of glass or enclosed by 2 or 3 walls open on some sides. Then there’s Moroccan style, where decorative stone or tiled walls partly wrap around the shower alcove. Some ultra modern bathrooms have shower walls spiralling around the alcove, with no door. With this design you can easily go in and out of the shower without glass or curtains in the way. However privacy is maintained by the overlapping arms of the spiral, and water can’t splash out. Your shower can also be in the open at one end of a completely tiled or masonry room, all sealed against water damage. A light partition wall can maintain privacy from the door and toilet. Another option, for motels and industrial bathrooms particularly, is the prefabricated shower cubicle made of plastic or stainless steel, with a glass door or curtain for privacy. The walls and floor of shower cubicles are usually tiled, but can also be lined with any other material as long as they are properly waterproofed. From the pedestrian grey cement to elegant creations of glass, stone and mosaic, we can do whatever shower you desire.</p>
+		<p>Your shower can be just a shower rose above the bath, or the usual cubicle made of glass or enclosed by 2 or 3 walls open on some sides. Then there’s Moroccan style, where decorative stone or tiled walls partly wrap around the shower alcove. Some ultra modern bathrooms have shower walls spiralling around the alcove, with no door.<span id="full1"> With this design you can easily go in and out of the shower without glass or curtains in the way. However privacy is maintained by the overlapping arms of the spiral, and water can’t splash out. Your shower can also be in the open at one end of a completely tiled or masonry room, all sealed against water damage. A light partition wall can maintain privacy from the door and toilet. Another option, for motels and industrial bathrooms particularly, is the prefabricated shower cubicle made of plastic or stainless steel, with a glass door or curtain for privacy. The walls and floor of shower cubicles are usually tiled, but can also be lined with any other material as long as they are properly waterproofed. From the pedestrian grey cement to elegant creations of glass, stone and mosaic, we can do whatever shower you desire.</span></p>
 
+
+<p><span id="text1">Know more</span></p>
+			<p><span id="less1">Less</span></p>
+		</div>
+	</div>
+
+	<br>
+	<div class="clear"></div>
+	<br>
+<div class="prod">
+	<div class="col-md-12">
+			<div class="prod-img2">
+			<img src="{$smarty.const.root_img}prod-img6.jpg" />
+		</div>
+	<div class="prodInfo">
 		<h3>Shower heads</h3>
-		<p>Shower heads bear some thought too. Shower roses are all fundamentally similar, though they come in water saving or water indulgent, and may have an adjustable spread. They can be fixed or gooseneck for those hard to reach places. One great modern shower head is the ‘rainfall’ shower head. It’s a big rectangular plate with lines of water holes producing an effect like rain. It can even be lit with different coloured lights for an illuminated rain shower!</p>
+		<p>Shower heads bear some thought too. Shower roses are all fundamentally similar, though they come in water saving or water indulgent, and may have an adjustable spread. They can be fixed or gooseneck for those hard to reach places. One great modern shower head is the ‘rainfall’ shower head. <span id="full2"> It’s a big rectangular plate with lines of water holes producing an effect like rain. It can even be lit with different coloured lights for an illuminated rain shower!</span></p>
+
+
+<p><span id="text2">Know more</span></p>
+<p><span id="less2">Less</span></p>
+
+	</div>
+
+	</div>
+	</div>
+
+	<br>
+	<div class="clear"></div>
+	<br>
+	<div class="prod">
+	<div class="col-md-12">
+		<div class="prod-img3">
+			<img src="{$smarty.const.root_img}prod-img7.jpg" />
+		</div>
+
+	<div class="prodInfo">
+
 
 		<h3>Glass</h3>
-		<p>Many shower cubicle styles have walls and doors of glass. The wall glass can be clear or frosted. Likewise the doors, which can slide or swing open. They may be edged with metal strips, or have bare smoothed glass for an almost invisible look. Other glass for your bathroom includes splashbacks for hand basins, mirrors, glass tiles, windows and glass shelving. Clear glass has big advantages in small or dark bathrooms, in that it lightens the look. It is also very easy to clean. However you do need to keep on top of mineral deposits that can spoil the beauty of your glass.</p>
+		<p>Many shower cubicle styles have walls and doors of glass. The wall glass can be clear or frosted. Likewise the doors, which can slide or swing open. They may be edged with metal strips, or have bare smoothed glass for an almost invisible look. <span id="full3"> Other glass for your bathroom includes splashbacks for hand basins, mirrors, glass tiles, windows and glass shelving. Clear glass has big advantages in small or dark bathrooms, in that it lightens the look. It is also very easy to clean. However you do need to keep on top of mineral deposits that can spoil the beauty of your glass.</p>
+
+</span>
+<p><span id="text3">Know more</span></p>
+<p><span id="less3">Less</span></p>
+     </div>
+     </div>
+     </div>
+
+	<br>
+	<div class="clear"></div>
+	<br>
+	<div class="prod">
+	<div class="col-md-12">
+		<div class="prod-img4">
+		<img src="{$smarty.const.root_img}prod-img8.jpg" />
+		</div>
+		<div class="prodInfo">
+
 
 		<h3>Accessories</h3>
-		<p>Along with the glass shelves (or wooden or stainless steel), are the other fixtures and fittings in your bathroom. This includes racks and hooks for towels and clothing, toilet roll holders, and shower caddies. The latter can be wall mounted inside the shower for a few small items. Alternately they can be free standing or fixed corner shower caddy poles with baskets and hooks for storing many items. All these accessories are available in many styles and materials to suit the look of your bathroom and the amount of space. Our designer can help you choose a set of accessories, as well as the lighting and taps, to complement your style.</p>
+		<p>Along with the glass shelves (or wooden or stainless steel), are the other fixtures and fittings in your bathroom. This includes racks and hooks for towels and clothing, toilet roll holders, and shower caddies. <span id="full4"> The latter can be wall mounted inside the shower for a few small items. Alternately they can be free standing or fixed corner shower caddy poles with baskets and hooks for storing many items. All these accessories are available in many styles and materials to suit the look of your bathroom and the amount of space. Our designer can help you choose a set of accessories, as well as the lighting and taps, to complement your style.</p>
+		</span>
+		
+		<p><span id="text4">Know more</span></p>
+		<p><span id="less4">Less</span></p>
+		</div>
+		
+		
+	</div>
+	</div>
 	</div>
 </section>
 <!--End Content-->
@@ -178,3 +253,68 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e8ea', end
 	}
 </style>
 
+
+<script>
+$(document).ready(function(){
+	$("#full1").hide();
+	$("#less1").hide();
+	$("#full2").hide();
+	$("#less2").hide();
+	$("#full3").hide();
+	$("#less3").hide();
+	$("#full4").hide();
+	$("#less4").hide();
+	
+  $("#text1").click(function(){
+	$("#full1").show();
+	$("#less1").show();
+	$("#text1").hide();
+  });
+  
+   $("#text2").click(function(){
+	$("#full2").show();
+	$("#less2").show();
+	$("#text2").hide();
+  });   
+  
+   $("#text3").click(function(){
+	$("#full3").show();
+	$("#less3").show();
+	$("#text3").hide();
+  });   
+  
+   $("#text4").click(function(){
+	$("#full4").show();
+	$("#less4").show();
+	$("#text4").hide();
+  }); 
+  
+  $("#less1").click(function(){
+	$("#full1").hide();
+	$("#less1").hide();
+	$("#text1").show();
+  });
+  
+   $("#less2").click(function(){
+	$("#full2").hide();
+	$("#less2").hide();
+	$("#text2").show();
+  });   
+  
+   $("#less3").click(function(){
+	$("#full3").hide();
+	$("#less3").hide();
+	$("#text3").show();
+  });   
+  
+   $("#less4").click(function(){
+	$("#full4").hide();
+	$("#less4").hide();
+	$("#text4").show();
+  });  
+  
+  
+  
+  
+});
+</script>

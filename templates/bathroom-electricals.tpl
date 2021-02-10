@@ -28,16 +28,17 @@
 {/literal}
 </style>
 <!--Start Top Banner-->
-<section class="top-banner ourteam">
+<section class="contact-banner ourteam">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<!--<div class="call-us">{$contact_number}</div>-->
+				<h1 class="banner_title">PRODUCTS</h1>		
+<!--<div class="call-us">{$contact_number}</div>-->				
 			</div>
 		</div>
 	</div>
 </section>
-<!--End Top Banner-->
+<!--End Top Banner-->   
 
 				<!-- Modal -->
 
@@ -61,18 +62,75 @@
 
 <section class="content"> 
 	<div class="container">
+	<center>
+	
 		<h2 class="ourmate-title"><span>Bathroom Electricals</span></h2>
         <p>Your bathroom fans, heaters, lights and power outlets can be just about any style you desire. However it is very important they and their circuitry are fully waterproofed to avoid short circuits, personal injury and fires. In Australia there are also regulations that specify how far power  points have to be from sinks and taps. This is to avoid likely water splash into the outlets. Our bathroom team is well aware of all such regulations and will build compliant bathrooms and renovations for you.</p>
-
+	</center>
+		<br>
+		<div class="clear"></div>
+		<br>
+		<div class="prod">
+		<div class="col-md-12">
+		<div class="prod-img1">
+			<img src="{$smarty.const.root_img}prod-img9.jpg" />
+		</div>
+		<div class="prodInfo">	
         <h3>Lights</h3>
-        <p>Lighting in the bathroom has some specific requirements. On one hand you need a bright focussed light over the mirror. On the other hand, it is appealing to have soft lighting for the bath and also for dark-adapted eyes in those early morning starts. Furthermore it’s kind to tired eyes after late night activities when you are winding down for sleep. The bathroom is a place to really relax and be gentle and tender while you cleanse. Therefore the lighting can reflect and support your self-care. Mood lighting can be wall-mounted lamps or racks, diffusion panels, or ceiling mounted such as hanging lanterns or recessed downlights. A dimmer switch for the main lighting is a good idea.</p>
+        <p>Lighting in the bathroom has some specific requirements. On one hand you need a bright focussed light over the mirror. On the other hand, it is appealing to have soft lighting for the bath and also for dark-adapted eyes in those early morning starts. Furthermore it’s kind to tired eyes after late night activities when you are winding down for sleep. <span id="full1">The bathroom is a place to really relax and be gentle and tender while you cleanse. Therefore the lighting can reflect and support your self-care. Mood lighting can be wall-mounted lamps or racks, diffusion panels, or ceiling mounted such as hanging lanterns or recessed downlights. A dimmer switch for the main lighting is a good idea.</span></p>
+		
+		
+<p><span id="text1">Know more</span></p>
+			<p><span id="less1">Less</span></p>
+		</div>
+	</div>
+	</div>
+
+	<br>
+	<div class="clear"></div>
+	<br>
+<div class="prod">
+	<div class="col-md-12">
+			<div class="prod-img2">
+			<img src="{$smarty.const.root_img}prod-img10.jpg" />
+		</div>
+	<div class="prodInfo">	
+		
         
         <h3>Fans</h3>
-        <p>Bathroom fans are very important for drawing out moisture-laden air from the room and your house. This helps prevent the growth of mould, mustiness and the rotting of timbers and walls. Fans can be manually turned on or motion-sensing, so they turn on when someone goes into the bathroom. They can even be humidity sensing, so they come on when the air is moist enough to require venting. Fans often come as a self-contained unit that fits into the ceiling or high on a wall. In these cases they are usually white, beige, silver or other neutral colour. However you can obtain fans that are incorporated into a light and these can be more decorative, colourful and stylish. Fans can also come combined with a heater. In cold weather, having just a fan running can be very chilly, but the heater helps offset the cold moving air! There are also building codes that advise venting the moist air from a fan to a ventilation duct or outside. This prevents moisture accumulating in your roof cavity. We can advise on suitable fan size, power and placement, after inspecting your bathroom and its surroundings.</p>
-        
-        <h3>Heaters</h3>
-        <p>Heating in the bathroom is a must for cold environments. You can easily set up a small portable heater in the bathroom. That is a more economical option than heating up the whole house. However you can have us instal a ceiling or wall-mounted heater, with or without fan and lights incorporated with it. This is a very space-saving option, and reduces the risk of burns and electrocution from portable heaters sitting on the floor. If you are after top comfort, there is even electric floor heating! It is built into the waterproof floor under the tiles or other top surface. Installation can be done by a very savvy handyman. However one part of the installation requires an electrician. If floor heating appeals to you and you’d prefer a skilled tradesperson to do it all, ask us what we can do.</p>
+        <p>Bathroom fans are very important for drawing out moisture-laden air from the room and your house. This helps prevent the growth of mould, mustiness and the rotting of timbers and walls. Fans can be manually turned on or motion-sensing, so they turn on when someone goes into the bathroom. <span id="full2">They can even be humidity sensing, so they come on when the air is moist enough to require venting. Fans often come as a self-contained unit that fits into the ceiling or high on a wall. In these cases they are usually white, beige, silver or other neutral colour. However you can obtain fans that are incorporated into a light and these can be more decorative, colourful and stylish. Fans can also come combined with a heater. In cold weather, having just a fan running can be very chilly, but the heater helps offset the cold moving air! There are also building codes that advise venting the moist air from a fan to a ventilation duct or outside. This prevents moisture accumulating in your roof cavity. We can advise on suitable fan size, power and placement, after inspecting your bathroom and its surroundings.</span></p>
+		
+<p><span id="text2">Know more</span></p>
+<p><span id="less2">Less</span></p>
 
+	</div>
+
+	</div>
+	</div>
+
+	<br>
+	<div class="clear"></div>
+	<br>
+	<div class="prod">
+	<div class="col-md-12">
+		<div class="prod-img3">
+			<img src="{$smarty.const.root_img}prod-img11.jpg" />
+		</div>
+
+	<div class="prodInfo"> 
+        <h3>Heaters</h3>
+        <p>Heating in the bathroom is a must for cold environments. You can easily set up a small portable heater in the bathroom. That is a more economical option than heating up the whole house. However you can have us instal a ceiling or wall-mounted heater, with or without fan and lights incorporated with it. <span id="full3">This is a very space-saving option, and reduces the risk of burns and electrocution from portable heaters sitting on the floor. If you are after top comfort, there is even electric floor heating! It is built into the waterproof floor under the tiles or other top surface. Installation can be done by a very savvy handyman. However one part of the installation requires an electrician. If floor heating appeals to you and you’d prefer a skilled tradesperson to do it all, ask us what we can do.</span></p>
+</span>
+<p><span id="text3">Know more</span></p>
+<p><span id="less3">Less</span></p>
+     </div>
+     </div>
+     </div>
+
+	<br>
+	<div class="clear"></div>
+	<br>
+	
 	</div>
 </section>
 <!--End Content-->
@@ -175,3 +233,68 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e8ea', end
 	}
 </style>
 
+
+<script>
+$(document).ready(function(){
+	$("#full1").hide();
+	$("#less1").hide();
+	$("#full2").hide();
+	$("#less2").hide();
+	$("#full3").hide();
+	$("#less3").hide();
+	$("#full4").hide();
+	$("#less4").hide();
+	
+  $("#text1").click(function(){
+	$("#full1").show();
+	$("#less1").show();
+	$("#text1").hide();
+  });
+  
+   $("#text2").click(function(){
+	$("#full2").show();
+	$("#less2").show();
+	$("#text2").hide();
+  });   
+  
+   $("#text3").click(function(){
+	$("#full3").show();
+	$("#less3").show();
+	$("#text3").hide();
+  });   
+  
+   $("#text4").click(function(){
+	$("#full4").show();
+	$("#less4").show();
+	$("#text4").hide();
+  }); 
+  
+  $("#less1").click(function(){
+	$("#full1").hide();
+	$("#less1").hide();
+	$("#text1").show();
+  });
+  
+   $("#less2").click(function(){
+	$("#full2").hide();
+	$("#less2").hide();
+	$("#text2").show();
+  });   
+  
+   $("#less3").click(function(){
+	$("#full3").hide();
+	$("#less3").hide();
+	$("#text3").show();
+  });   
+  
+   $("#less4").click(function(){
+	$("#full4").hide();
+	$("#less4").hide();
+	$("#text4").show();
+  });  
+  
+  
+  
+  
+});
+</script>
