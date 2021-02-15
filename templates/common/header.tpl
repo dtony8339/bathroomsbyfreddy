@@ -214,25 +214,25 @@
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" style='font-size:14px;'> Products
                                 <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="/bathroom-carpentry/">Bathroom Carpentry</a></li>
-                                    <li><a href="/bathroom-electricals/">Bathroom Electricals</a></li>
-                                    <li><a href="/bathroom-plumbing/">Bathroom Plumbing</a></li>
-                                    <li><a href="/bathroom-masonry-tiling-and-floors/">Masonry, Tiling and Floors</a></li>
-                                    <li><a href="/showers-glass-and-accessories/">Showers, Glass and Accessories</a></li>
-                                    <li><a href="/vanity-units-basins-and-baths/">Vanity Units, Basins and Baths</a></li>
+                                    <li><a href="{$smarty.const.siteurl}/bathroom-carpentry/">Bathroom Carpentry</a></li>
+                                    <li><a href="{$smarty.const.siteurl}/bathroom-electricals/">Bathroom Electricals</a></li>
+                                    <li><a href="{$smarty.const.siteurl}/bathroom-plumbing/">Bathroom Plumbing</a></li>
+                                    <li><a href="{$smarty.const.siteurl}/bathroom-masonry-tiling-and-floors/">Masonry, Tiling and Floors</a></li>
+                                    <li><a href="{$smarty.const.siteurl}/showers-glass-and-accessories/">Showers, Glass and Accessories</a></li>
+                                    <li><a href="{$smarty.const.siteurl}/vanity-units-basins-and-baths/">Vanity Units, Basins and Baths</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" style='font-size:14px;'> Services
                                 <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="/bathroom-renovations-and-extensions/">Renovations and Extensions</a></li>
-                                    <li><a href="/bathroom-repairs-and-maintenance/">Repairs and Maintenance</a></li>
-                                    <li><a href="/new-bathrooms-and-ensuites/">New Bathrooms and Ensuites</a></li>
+                                    <li><a href="{$smarty.const.siteurl}/bathroom-renovations-and-extensions/">Renovations and Extensions</a></li>
+                                    <li><a href="{$smarty.const.siteurl}/bathroom-repairs-and-maintenance/">Repairs and Maintenance</a></li>
+                                    <li><a href="{$smarty.const.siteurl}/new-bathrooms-and-ensuites/">New Bathrooms and Ensuites</a></li>
                                 </ul>
                             </li>
                             {if !empty($our_work_menu_check)}
-                                <li><a href="/our-work" style='font-size:14px;'>Our Work</a></li>
+                                <li><a href="{$smarty.const.siteurl}our-work" style='font-size:14px;'>Our Work</a></li>
                             {/if}
                             {if $our_reviws_menu_check >0 }
                                 <li><a href="{$smarty.const.siteurl}reviews/" style='font-size:14px;'>reviews</a></li>
@@ -242,8 +242,8 @@
                                 <li><a href="/the-team" style='font-size:14px;'>The Team</a></li>
                             {/if}
                             <li><a href="/price-guide/" style='font-size:14px;'>Price Guide</a></li>
-                            <li><a href="/about-us" style='font-size:14px;'>About Us</a></li>
-                            <li><a href="/contact-us" style='font-size:14px;'>contact us</a></li>
+                            <li><a href="{$smarty.const.siteurl}about-us" style='font-size:14px;'>About Us</a></li>
+                            <li><a href="{$smarty.const.siteurl}contact-us" style='font-size:14px;'>contact us</a></li>
                             {if $smarty.session.first_name eq ''}
                                 <li><a  data-toggle="modal" data-target="#sign_in" class="sign_link" style='font-size:14px;'>Sign in</a></li>
                             {else}
@@ -394,7 +394,7 @@
         </div>        
     </div>
 </div>
-<div class="modal fade" id="sign_in">
+<div class="modal fade in" id="sign_in">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -407,25 +407,47 @@
                         <li role="presentation" class="active">
                             <a href="#login" aria-controls="login" role="tab" data-toggle="tab">Login</a>
                         </li>
-                        <!-- 	<li role="presentation">
-							<a href="#register" aria-controls="register" role="tab" data-toggle="tab">Register</a>
-						</li> -->
-                    </ul>
+                        <li role="presentation">
+							<a href="#register" aria-controls="register" role="tab" data-toggle="tab">Signup</a>
+						</li> 
+					</ul>
 
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="login">
+							<center>
+							<img src="{$smarty.const.root_img}login-img.png" alt="">
+							<h1>LOGIN</h1>
+							</center>
+						
                             <div class="tabs-form-wrapper">
                                 <form id="cpa-form" action="#">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
-                                        <input id="username" type="email" class="form-control" name="username" placeholder="Your Email" required>
-                                    </div>
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password" required="">
-                                    </div>
+								<span class="input-group-addon">
+								<i class="glyphicon glyphicon-user" aria-hidden="true"></i> Username
+								</span>
+								<div class="input-group">                                        
+								<input id="username" type="email" class="form-control txtfield" name="username" placeholder="" required>
+								</div>
+
+								<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i> Password</span>
+								<div class="input-group">
+								<input id="password" type="password" class="form-control txtfield" name="password" placeholder="" required="">
+								</div>
+									
+									<div class="rm">
+										<span class="f-left"><input type="checkbox" class="remember_me"> Remember me</span>
+										<span class="f-right"><a href="#" class="forgot">Forgot Password ?</a></span>
+										<div class="clear"></div>
+									</div>
+
                                     <input class="login_btn" type="submit" name="Login" value="Login">
+									<p>Or Login with</p>
+									<div class="socmed">
+										<a href="#"><img src="{$smarty.const.root_img}fb-icon.png" alt=""></a>
+										<a href="#"><img src="{$smarty.const.root_img}twitter-icon.png" alt=""></a>
+										<a href="#"><img src="{$smarty.const.root_img}gmail-icon.png" alt=""></a>
+									</div>
+				
                                 </form>
                                 <input type="hidden" name="client_email" id="client_email">
                                 <input type="hidden" name="client_pass" id="client_pass">
@@ -434,6 +456,8 @@
                                 <hr>
                                 <div id="status">
                                 </div>
+								
+								
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="register">
