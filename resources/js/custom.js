@@ -14,6 +14,7 @@ jQuery(document).ready(function ($) {
 });
 
 $('#sign_in,#OFC,#video01').modal({
+	console.log("alert");
     show: false,
     backdrop: 'static',
     keyboard: false
