@@ -9649,15 +9649,26 @@ font-size: 20px;
 ul..nav-tabs{
 	border:0;
 }
-
+.nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover,
 ul.nav-tabs li a{
 	color: #fff;
     font-size: 20px;
     background: #f79122;
+	border: 1px solid #f79122;
+	cursor: default;
+}
+
+.nav-tabs>li.active>a{
+	font-size: 20px;
+	color: #f79122;
+	cursor: default;
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-bottom-color: transparent;	
 }
 ul.nav-tabs li a.active{
-	color: #f79122;
-	font-size: 20px;
+	/*color: #f79122;*/
+
 }
 
 .tab-content{
@@ -9808,6 +9819,15 @@ height: 100%;
 	.sBox{
 		max-width:210px;
 	}
+	.teamBox {
+		width:21%;
+	}
+	.teamBox:first-child{
+		margin-left:31px;
+	}
+	.team {
+		background:none;
+	}
 }
 @media(max-width:768px){
 	.navi{
@@ -9851,6 +9871,10 @@ height: 100%;
 	.bbox_img img {
     width: 100%;
 	}
+	.teamBox {
+		width: 45%;
+	}	
+	
 }
 @media (max-width: 700px){
 	.top-banner.ourteam {
@@ -9861,6 +9885,11 @@ height: 100%;
 		margin: 10px auto;
 		font-size: -webkit-xxx-large;
 	}
+	.teamBox {
+		width: 90%;
+		margin: auto !important;
+		float: none;
+	}	
 }
 
 @media(max-width:767px){

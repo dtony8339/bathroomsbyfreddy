@@ -461,8 +461,57 @@
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="register">
-                            <br> Register Using
-                            <br><br>
+						
+						<center>
+							<img src="{$smarty.const.root_img}login-img.png" alt="">
+							<h1>SIGN UP</h1>
+							</center>
+                           <div class="tabs-form-wrapper">
+                                <form id="cpa-form" action="#">
+								<span class="input-group-addon">
+								<i class="glyphicon glyphicon-user" aria-hidden="true"></i> Username
+								</span>
+								<div class="input-group">                                        
+								<input id="username" type="username" class="form-control txtfield" name="username" placeholder="" required>
+								</div>
+								
+								<span class="input-group-addon">
+								<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> Email Address
+								</span>
+								<div class="input-group">                                        
+								<input id="email" type="email" class="form-control txtfield" name="email" placeholder="" required>
+								</div>
+
+								<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i> Password</span>
+								<div class="input-group">
+								<input id="password" type="password" class="form-control txtfield" name="password" placeholder="" required="">
+								</div>
+									
+									<div class="rm">
+										<span class="f-left"><input type="checkbox" class="remember_me"> Remember me</span>
+										
+										<div class="clear"></div>
+									</div>
+
+                                    <input class="login_btn" type="submit" name="signup" value="Sign Up">
+									<p>Or Login with</p>
+									<div class="socmed">
+										<a href="#"><img src="{$smarty.const.root_img}fb-icon.png" alt=""></a>
+										<a href="#"><img src="{$smarty.const.root_img}twitter-icon.png" alt=""></a>
+										<a href="#"><img src="{$smarty.const.root_img}gmail-icon.png" alt=""></a>
+									</div>
+				
+                                </form>
+                                <input type="hidden" name="client_email" id="client_email">
+                                <input type="hidden" name="client_pass" id="client_pass">
+                                <input type="hidden" name="client_name" id="client_name">
+                                <input type="hidden" name="socialmedia_name" id="socialmedia_name">
+                                <hr>
+                                <div id="status">
+                                </div>
+								
+								
+                            </div>
                             <!-- <div data-scope="public_profile,email" onlogin="checkLoginStateRegister();" class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>
                              -->
                             <!--  <fb:login-button scope="public_profile,email" onlogin="checkLoginStateRegister();">  Facebook

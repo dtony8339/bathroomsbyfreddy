@@ -214,7 +214,7 @@
 <div class="team">
 
 	<div class="teamPage">
-	<div class="teamBox">
+	<div class="teamBox col-ms-3">
 		<div class="photos">
 			<img src="{$smarty.const.root_img}team-1.png" />
 		</div>
@@ -233,7 +233,7 @@
 		</div>
 	</div>
 	
-	<div class="teamBox">
+	<div class="teamBox col-ms-3">
 		<div class="photos">
 			<img src="{$smarty.const.root_img}team-2.png" />
 		</div>
@@ -252,7 +252,7 @@
 		</div>
 	</div>
 	
-	<div class="teamBox">
+	<div class="teamBox col-ms-3">
 		<div class="photos">
 			<img src="{$smarty.const.root_img}team-3.png" />
 		</div>
@@ -270,7 +270,7 @@
 			</div>
 		</div>
 	</div>	
-	<div class="teamBox">
+	<div class="teamBox col-ms-3 ">
 		<div class="photos">
 			<img src="{$smarty.const.root_img}team-4.png" />
 		</div>
