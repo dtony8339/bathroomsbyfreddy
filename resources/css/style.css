@@ -4880,9 +4880,15 @@ nav.transparent.navbar.navbar-default.navbar-fixed-top.scroll-header {
 	.navbar-default .navbar-nav {
 
 		display: block !important;
+		margin-top: 80px;
 
 	}
-
+	
+}
+@media(max-width:991px){
+	h1.banner_title{
+		font-size:2.5em !important;
+	}
 }
 
 div#social-intents-tab-chat {
@@ -9874,7 +9880,29 @@ height: 100%;
 	.teamBox {
 		width: 45%;
 	}	
-	
+	.work-list,
+	.works{
+		width:100%;
+		float:none;
+	}
+	.padding{
+		height:auto;
+	}
+	.teamPage{
+		top:0 !important;
+	}
+	.maintenance-img img,
+	.repair-img img{
+		width:100%
+	}
+	.maintenance1,
+	.repair{
+		padding: 0;
+		background-size: cover;
+	}
+	.maintenance1 h4, .repair h4 {
+		font-size: 2.5em;
+	}	
 }
 @media (max-width: 700px){
 	.top-banner.ourteam {
