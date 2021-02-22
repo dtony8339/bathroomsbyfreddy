@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2021-02-03 12:41:25
+/* Smarty version 3.1.31, created on 2021-01-31 15:06:09
   from "C:\xampp\htdocs\bathroomsbyfreddy\templates\common\header_scripts.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_601a8be5828302_51221271',
+  'unifunc' => 'content_6016b951888350_95522780',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_601a8be5828302_51221271 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6016b951888350_95522780 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">

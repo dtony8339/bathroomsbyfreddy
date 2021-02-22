@@ -1,12 +1,14 @@
 <?php
 
  require "config.inc.php";
- require "helpers/functions.php";
 
+ 
+require "helpers/functions.php";
 
+echo 'a';
 require(''   . $config['smarty_lib'] . 'Smarty.class.php');
 // Smarty Template Engine
-
+echo 'b';
 
 $smarty = new Smarty;
 
@@ -22,7 +24,7 @@ $smarty->cache_lifetime = 120;
 //require('' . $config['web_pages'] . 'global.php');
 require('module/global.php');
 
-
+die('test');
 
 
 if (!isset($_GET['route'])) {

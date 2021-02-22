@@ -1,7 +1,4 @@
 <?php
-
-
-//require "../ProfessionalFreddyau/config.inc.php";
 ob_start();
 error_reporting(1);
 session_start();
@@ -10,35 +7,12 @@ session_start();
 //date_default_timezone_set("Asia/Karachi");
 
 //DATABASE SETTINGS
-
-// $config['host'] 		= 'localhost';
-// $config['user'] 		= 'root';
-// $config['pass'] 		= '';
-// $config['dbname']	 	= 'professionalfencing_db';
 $config['host'] 		= 'localhost';//'10.131.137.35';
 $config['user'] 		= 'root';//'byfreddyprod';
 $config['pass'] 		= '';//'eBTo_012Abus0159510';
 $config['dbname']		= 'BY_FREDDY';
 
-// for development
-//  $config['host'] 		= '10.131.137.35';
-//  $config['user'] 		= 'development';
-//  $config['pass'] 		= 'eBTo_521Abus8500156';
-// $config['dbname']		= 'BY_FREDDY_BACKUP';
-
-
 $conn 		= mysqli_connect($config['host'],$config['user'],$config['pass'],$config['dbname']);
-//$config['db'] 			= mysqli_select_db($config['dbname'],$config['link']);
-
-/*
-$config['host'] 		= '10.131.51.6';
-$config['user'] 		= 'sl1ght';
-$config['pass'] 		= '1z2x3c@!!sL1ght@';
-$config['dbname']	 	= 'professionalfencing_db';
-$config['link'] 		= mysql_connect($config['host'],$config['user'],$config['pass']);
-$config['db'] 			= mysql_select_db($config['dbname'],$config['link']);
-*/
-
 
 //HTTP REGUEST URLS FOR CSS, IMAGES AND JS newsite\resources
 //$config['siteurl'] 				= "https://".$_SERVER['SERVER_NAME']."/";

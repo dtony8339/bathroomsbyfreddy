@@ -1,4 +1,5 @@
 <?php
+
 function get_OurProductsPlumbers($active){
 
     GLOBAL $conn;
@@ -10,17 +11,9 @@ function get_OurProductsPlumbers($active){
 function get_ProductBathrooms($active){
 	GLOBAL $conn;
 	$sql = "SELECT * FROM `company_products` WHERE `is_active` = $active AND `company_for` = 'BathroomsByFreddy' ORDER BY `is_active` ASC";
-	//$result = mysql_query($sql) or die(mysqli_error());
-    return	$result = mysqli_query($conn, $sql);
-    // //return $result;
+	
+    return	$result = mysqli_query($conn, $sql)
     
-//     GLOBAL $conn;
-
-// 	$sql = "SELECT * FROM `company_products` WHERE `is_active` = $active AND `company_for` = 'BathroomsByFreddy' ORDER BY `is_active` ASC";
-
-//    $result = mysqli_query($conn, $sql);			
-
-//     return $result;
 }
 function get_Blogpage($link,$sublink,$status,$site_project){
 

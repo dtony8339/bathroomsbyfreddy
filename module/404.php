@@ -12,8 +12,6 @@ $smarty->assign("main_heading", "Some Thing Went Wrong!!!");
 $smarty->assign("sub_heading", "<br><br>OOOPS The page is broken or not found<br><br> ");
 $smarty->assign("navigation", "true");
 
-
-
 ///////////END
 
 // Call Page Templates

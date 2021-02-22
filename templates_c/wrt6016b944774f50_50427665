@@ -1,5 +1,30 @@
+<?php
+/* Smarty version 3.1.31, created on 2021-01-31 15:05:56
+  from "C:\xampp\htdocs\bathroomsbyfreddy\templates\common\footer_scripts.tpl" */
 
-<script type="text/javascript">
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.31',
+  'unifunc' => 'content_6016b9447737f7_68682067',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '0c7eee14d75cf5aafba58f344412d697c0d53c4d' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\bathroomsbyfreddy\\templates\\common\\footer_scripts.tpl',
+      1 => 1612099004,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_6016b9447737f7_68682067 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+<?php echo '<script'; ?>
+ type="text/javascript">
 	
 	function downloadJSAtOnload() {
 	 var element = document.createElement("script");
@@ -11,9 +36,12 @@
 	 else if (window.attachEvent)
 	 window.attachEvent("onload", downloadJSAtOnload);
 	 else window.onload = downloadJSAtOnload;
-	</script>
+	<?php echo '</script'; ?>
+>
 
-	<script>
+
+	<?php echo '<script'; ?>
+>
 
 	function geolocate()
 
@@ -25,9 +53,10 @@
 
 	}
 
-	</script>
+	<?php echo '</script'; ?>
+>
 
-{literal}
+
 
 	<!-- Google Tag Manager -->
 
@@ -36,10 +65,11 @@
 <!-- End Google Tag Manager -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
-{/literal}
 
-{literal}
-<script>
+
+
+<?php echo '<script'; ?>
+>
 
   // on preview show iframe
 
@@ -110,8 +140,9 @@ document.getElementById('creditcardforms').style.display='block';
 
  
 
-</script>
-{/literal}
+<?php echo '</script'; ?>
+>
+
 
 
 	
@@ -124,9 +155,10 @@ document.getElementById('creditcardforms').style.display='block';
 
    
 
-   <!-- <script type='text/javascript'>
+   <!-- <?php echo '<script'; ?>
+ type='text/javascript'>
 
-	{literal}
+	
 
         localStorage.removeItem("si_convert-2c9fa7465c3c6e61015c43c5de50058a");
 
@@ -150,13 +182,15 @@ document.getElementById('creditcardforms').style.display='block';
 
         })();
 
-		{/literal}
+		
 
 		
 
-    </script>-->
-{literal}
-<script>
+    <?php echo '</script'; ?>
+>-->
+
+<?php echo '<script'; ?>
+>
 
         function init(){
 
@@ -200,19 +234,23 @@ document.getElementById('creditcardforms').style.display='block';
 
 
 
-</script>
-{/literal}
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6w030WALwmibl59j5EgPuJvqH6pBeZ-Y&libraries=places&callback=init"
+<?php echo '</script'; ?>
+>
 
-        async defer></script> -->
+<!-- <?php echo '<script'; ?>
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6w030WALwmibl59j5EgPuJvqH6pBeZ-Y&libraries=places&callback=init"
+
+        async defer><?php echo '</script'; ?>
+> -->
 
 
 
 
 
-{literal}
 
-<script type="text/javascript">
+
+<?php echo '<script'; ?>
+ type="text/javascript">
 
 var root_url="{$smarty.const.siteurl}";
 
@@ -323,13 +361,17 @@ function signoutuser() {
 
 
 
-</script>
+<?php echo '</script'; ?>
+>
 
-{/literal}
 
-<!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
-{literal}
-<script>
+
+<!-- <?php echo '<script'; ?>
+ src="https://code.jquery.com/jquery-1.10.2.js"><?php echo '</script'; ?>
+> -->
+
+<?php echo '<script'; ?>
+>
 
 $(document).ready(function(){ 
  
@@ -354,12 +396,14 @@ $(document).ready(function(){
 
 });
 
-</script>
+<?php echo '</script'; ?>
+>
 
-{/literal}
 
-{literal}
-<script>
+
+
+<?php echo '<script'; ?>
+>
 
 if (matchMedia) {
 
@@ -401,13 +445,15 @@ function WidthChange(mq) {
 
 
 
-</script>
-{/literal}
+<?php echo '</script'; ?>
+>
 
 
 
-{literal}
-<script>
+
+
+<?php echo '<script'; ?>
+>
 $(document).ready(function(){
 var modal = document.getElementById('network_frednet');
 var frednet = document.getElementById('frednet');
@@ -484,8 +530,9 @@ maintenance.onclick =function(){
 
 });
 
-</script>
-{/literal}
+<?php echo '</script'; ?>
+>
+
 
 
 
@@ -495,3 +542,5 @@ maintenance.onclick =function(){
 
 
 
+<?php }
+}

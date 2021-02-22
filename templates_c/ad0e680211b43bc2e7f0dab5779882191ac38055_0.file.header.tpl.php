@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2021-01-31 14:19:14
+/* Smarty version 3.1.31, created on 2021-02-03 12:41:25
   from "C:\xampp\htdocs\bathroomsbyfreddy\templates\common\header.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_6016ae526e1bd6_60447220',
+  'unifunc' => 'content_601a8be5b56f43_04113619',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ad0e680211b43bc2e7f0dab5779882191ac38055' => 
     array (
       0 => 'C:\\xampp\\htdocs\\bathroomsbyfreddy\\templates\\common\\header.tpl',
-      1 => 1612099004,
+      1 => 1612148049,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6016ae526e1bd6_60447220 (Smarty_Internal_Template $_smarty_tpl) {
+function content_601a8be5b56f43_04113619 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <style>
@@ -84,7 +84,7 @@ network.png" alt="network" class="img-responsive network">
 separator.png" alt=""></span>
 						<div class="txt-top">
 						 <span class="networks">
-						 <a href="#" class="frednet" onclick="myNetwork()">Freddy Network</a>
+						<a href="#" class="frednet" id="frednet" >Freddy Network</a>
                             <!--
 							<a href="#" data-toggle="dropdown" class="frednet" >Freddy Network</a>
 							
@@ -116,9 +116,9 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 			</div><!-- top-head" -->
 		</div>
 		</div>
-		
 
 <div class="network_frednet" id="network_frednet">
+<!--
 <div class="netlist">
 	<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['sites_menuurl']->value, 'rowurl');
@@ -138,6 +138,82 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 ?>
 
 </div>
+-->
+<div class="netlist">
+	
+	<div>
+	<a href="https://automationbyfreddy.co.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/automation_(1).png"><p>Automation</p></a>
+	</div>
+	<div>
+	<a href="/byfreddy" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/bathrooms.png"><p>Bathrooms By Freddy</p></a>
+	</div>
+	<div>
+	<a href="https://byfreddy.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/"><p>By Freddy Berkshire</p></a>
+	</div>
+	<div>
+	<a href="https://paintingbyfreddy.co.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/plumbing1.png"><p>BY Freddy BERKSHIRE</p></a>
+	</div>
+	<div>
+	<a href="https://bricklayingbyfreddy.co.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/bricklaying.png"><p>Bricklaying</p></a>
+	</div>
+	<div>
+	<a href="https://carpentrybyfreddy.co.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/carpentry.png"><p>Carpentry</p></a>
+	</div>
+	<div>
+	<a href="https://byfreddy.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/"><p>Cleaners By Freddy</p></a>
+	</div>
+	<div>
+	<a href="https://demolitionbyfreddy.co.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/demolition_copy.png"><p>Demolition</p></a>
+	</div>
+	<div>
+	<a href="/byfreddy" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/"><p>EB - BRACKNELL</p></a>
+	</div>
+	<div>
+	<a href="/byfreddy" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/"><p>EB - NEWBURY</p></a>
+	</div>
+	<div>
+	<a href="/byfreddy" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/"><p>EB - READING</p></a>
+	</div>
+	<div>
+	<a href="/byfreddy" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/"><p>EB - Swindon</p></a>
+	</div>
+	<div>
+	<a href="/byfreddy" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/"><p>EB - Farnborough</p></a>
+	</div>
+	<div>
+	<a href="https://electricalbyfreddy.co.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/electrical_copy.png"><p>Electrical</p></a>
+	</div>
+	<div>
+	<a href="https://fencingbyfreddy.co.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/Professional_Freddy_Mascot_fencing.png"><p>Fencing</p></a>
+	</div>
+	<div>
+	<a href="https://flooringbyfreddy.co.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/tilling.png"><p>Flooring</p></a>
+	</div>
+	<div>
+	<a href="https://byfreddy.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/"><p>By Freddy Hampshire</p></a>
+	</div>
+	<div>
+	<a href="https://byfreddy.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/by_freddy.png"><p>Kitchens</p></a>
+	</div>
+	<div>
+	<a href="https://landscapingbyfreddy.co.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/landscaping_copy.png"><p>Landscaping</p></a>
+	</div>
+	<div>
+	<a href="byfreddy.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/"><p>Mastic</p></a>
+	</div>
+	<div>
+	<a href="https://mowingbyfreddy.co.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/mowing_.png"><p>Mowing</p></a>
+	</div>
+	<div>
+	<a href="https://paintingbyfreddy.co.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/painting.png"><p>Painting</p></a>
+	</div>
+	<div>
+	<a href="https://plasteringbyfreddy.co.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/plastering-mascot-white.png"><p>Plastering</p></a>
+	</div>
+	<div>
+	<a href="https://plumbingbyfreddy.co.uk" target="_blank"><img src="https://admin.byfreddy.io/photo/avatar/plumbing.png"><p>plumbing</p></a>
+	</div>
+	</div>
 </div>
 			
 <div class="navi">

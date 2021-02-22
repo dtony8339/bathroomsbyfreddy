@@ -1,6 +1,4 @@
 <?php
-
-
 // SEO INFORMATION
 $smarty->assign("seo_title", 'Bathrooms By Freddy');
 $smarty->assign("seo_desc", '');
